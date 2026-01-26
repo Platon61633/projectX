@@ -3,7 +3,6 @@ import { Parallax } from "react-parallax";
 import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
-import { useMediaQuery } from "react-responsive";
 import consult from "../accept/Platon_and_bro.jpg";
 
 const Main = () => {
