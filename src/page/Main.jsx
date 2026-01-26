@@ -4,48 +4,33 @@ import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import { useMediaQuery } from "react-responsive";
+import consult from "../accept/Platon_and_bro.jpg";
 
 const Main = () => {
-
-    const isMobile = useMediaQuery({ maxWidth: 1000 });
-
     return (
         <div className={styles.main}>
             <Parallax
+                className={styles.parallax}
                 blur={10}
                 bgImage={require("../accept/gradient.jpg")}
                 bgImageAlt="background"
                 strength={200}
             >
                 <div className={styles.infa}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae quia autem ullam voluptates odio, qui maxime natus
-                    pariatur dolorum voluptate, ipsum voluptatibus inventore
-                    laborum. Culpa officiis molestiae sint alias animi? A iusto
-                    sed tempora omnis iste hic exercitationem possimus
-                    perferendis aliquid quidem. Suscipit mollitia exercitationem
-                    explicabo eum praesentium. Sequi tempora quos doloribus
-                    aspernatur. Nulla itaque deserunt odio similique ratione
-                    officia! Reprehenderit nobis sunt iusto expedita, facilis
-                    alias soluta officia placeat dolores quidem. Ipsum molestias
-                    repellat dolore distinctio minus magni fugit est aliquid
-                    nulla voluptas blanditiis, doloribus eos natus suscipit
-                    eaque. Autem minus quo consequatur at non repellendus,
-                    delectus reiciendis accusamus odio incidunt earum dolorem
-                    numquam iure suscipit, provident nemo vero corporis magni et
-                    maiores ea molestias maxime? Architecto, harum voluptas!
-                    Fugit, dignissimos doloribus incidunt neque reiciendis dicta
-                    reprehenderit adipisci aspernatur explicabo odit similique
-                    ab animi provident perspiciatis dolorum et odio, esse
-                    possimus earum veniam in quas cum. Natus, neque mollitia.
+                    М.Ю.Лермонтов Пророк С тех пор, как Вечный Судия Мне дал
+                    всеведенье пророка, В очах людей читаю я Страницы злобы и
+                    порока. Провозглашать я стал любви И правды чистые ученья, —
+                    В меня все ближние мои Бросали бешено каменья. Посыпал
+                    пеплом я главу, Из городов бежал я нищий, И вот в пустыне я
+                    живу, Как птицы, даром Божьей пищи.
                 </div>
             </Parallax>
             <div className={styles.plus}>
                 <h1>Достоинства</h1>
-                <div className={styles.cards} style={{gridTemplateColumns: `1fr${isMobile?null:' 1fr 1fr'}`}}>
+                <div className={styles.cards}>
                     <div className={styles.card}>
                         <h2>1</h2>
-                        <PiStudent size={50}/>
+                        <PiStudent size={50} />
                         <p>
                             мы вообще классные молодые ребята, ещё перспективные
                         </p>
@@ -63,6 +48,29 @@ const Main = () => {
                         <p>
                             мы вообще классные молодые ребята, ещё перспективные
                         </p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div className={styles.consult}>
+                <div>
+                    <h2>Нужна консультация?</h2>
+                    <p>Задайте нам вопрос в чате.</p>
+                </div>
+
+                <img src={consult} alt="" />
+                <div className="btn-primary">
+                    <a href="https://t.me/not_LP" style={{ color: "white" }}>
+                        Задать вопрос
+                    </a>
+                </div>
+            </div>
+            <hr />
+            <div className={styles.courses}>
+                <h2>Наши курсы</h2>
+                <div className={styles.cards}>
+                    <div className={styles.card}>
+                        <h2>Курс 1</h2>
                     </div>
                 </div>
             </div>
