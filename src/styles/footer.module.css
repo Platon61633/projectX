@@ -1,0 +1,146 @@
+.footer {
+    background: #111827;
+    color: white;
+    padding: 3rem;
+}
+.footer_content {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .footer_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer_logo svg {
+    font-size: 2rem;
+}
+
+.footer_description {
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer_social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social_link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social_link:hover {
+    background: var(--primary-color);
+}
+
+.footer_section h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.footer_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer_section ul li a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_section ul li a:hover {
+    color: white;
+}
+
+.footer_contacts li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer_contacts strong {
+    color: white;
+    font-weight: 600;
+}
+
+.footer_contacts a,
+.footer_contacts span {
+    color: #d1d5db;
+}
+
+.footer_bottom {
+    border-top: 1px solid #374151;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.payment_methods {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #9ca3af;
+}
+
+.payment_icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.payment_icons span {
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.copyright p {
+    margin: 0.25rem 0;
+}

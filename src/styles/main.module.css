@@ -33,16 +33,21 @@
     box-shadow: var(--shadow);
     transition: transform 0.3s;
     display: flex;
+    gap: 30px;
     flex-direction: column;
     align-items: center;
 }
 
-.card p{
+/* .card p{
     margin-top: 30px;
-}
+} */
+
+/* .card h2{
+    margin-bottom: 30px;
+} */
 
 .consult{
-    margin: 100px 3rem 75px;
+    margin: 200px 3rem 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +69,7 @@
 }
 
 .courses{
-    margin-top: 75px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;

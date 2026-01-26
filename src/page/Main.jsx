@@ -4,6 +4,7 @@ import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
+import Footer from "../components/Footer";
 
 const Main = () => {
     return (
@@ -58,7 +59,7 @@ const Main = () => {
 
                 <img src={consult} alt="" />
                 <div className="btn-primary">
-                    <a href="https://t.me/not_LP" style={{ color: "white" }}>
+                    <a href="https://t.me/not_LP">
                         Задать вопрос
                     </a>
                 </div>
@@ -68,9 +69,37 @@ const Main = () => {
                 <div className={styles.cards}>
                     <div className={styles.card}>
                         <h2>Курс 1</h2>
+                        <ul>
+                            <li>Две бутылки брагги</li>
+                            <li>Полкилоса кокса</li>
+                            <li>Два патрона</li>
+                            <li>Фундаментальная теория</li>
+                        </ul>
+                        <div className="btn-secondary">Подробнее</div>
+                    </div>
+                    <div className={styles.card}>
+                        <h2>Курс 2</h2>
+                        <ul>
+                            <li>Две бутылки брагги</li>
+                            <li>Полкилоса кокса</li>
+                            <li>Два патрона</li>
+                            <li>Фундаментальная теория</li>
+                        </ul>
+                        <div className="btn-secondary">Подробнее</div>
+                    </div>
+                    <div className={styles.card}>
+                        <h2>Курс 3</h2>
+                        <ul>
+                            <li>Две бутылки брагги</li>
+                            <li>Полкилоса кокса</li>
+                            <li>Два патрона</li>
+                            <li>Фундаментальная теория</li>
+                        </ul>
+                        <div className="btn-secondary">Подробнее</div>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };
