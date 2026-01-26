@@ -49,7 +49,6 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-                <hr />
             </div>
             <div className={styles.consult}>
                 <div>
@@ -64,7 +63,6 @@ const Main = () => {
                     </a>
                 </div>
             </div>
-            <hr />
             <div className={styles.courses}>
                 <h2>Наши курсы</h2>
                 <div className={styles.cards}>
