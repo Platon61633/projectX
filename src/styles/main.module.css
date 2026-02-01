@@ -79,6 +79,12 @@
   -webkit-background-clip: text;
 }
 
+@media (width > 1000) {
+    .title{
+        padding: 15px 40px 10px;
+    }
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
