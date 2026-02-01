@@ -1,5 +1,5 @@
 .main{
-    background-color: var(--light-bg);
+    background-color: rgb(237, 237, 237);
 }
 
 .parallax{
@@ -10,6 +10,7 @@
   /* margin-top: 150px; */
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+  margin: 1rem;
 }
 
 .stars {
@@ -179,7 +180,9 @@
     .title{
         padding: 25px 40px 20px;
         font-size: 1.4rem;
+        margin: 0;
     }
+
     .infa{
         margin: 20px;
     }
