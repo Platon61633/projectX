@@ -4,6 +4,10 @@
     margin: 10px;
 }
 
+.head svg {
+    font-size: 50px;
+}
+
 .logoName {
     display: flex;
     align-items: center;
@@ -51,7 +55,7 @@
     text-align: center;
 }
 
-.close{
+.close {
     cursor: pointer;
     right: 10px;
     top: 10px;
@@ -82,4 +86,17 @@
 }
 .link:hover:after {
     width: 100%;
+}
+
+
+@media (width < 1000px) {
+    .head {
+        font-size: 10px;
+    }
+    .head svg {
+        font-size: 25px;
+    }
+    .head h1 {
+        margin-left: 10px;
+    }
 }

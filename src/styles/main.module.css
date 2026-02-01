@@ -76,7 +76,7 @@
 }
 .title span {
   background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 
@@ -100,6 +100,7 @@
 @media (width < 1000px) {
     .title{
         padding: 15px 40px 10px;
+        font-size: 1.4rem;
     }
     .infa{
         margin: 20px;

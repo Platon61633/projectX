@@ -14,7 +14,7 @@ const Head = () => {
         <div className={styles.head}>
             {IsShow ? (
                 <div className={styles.window} onClick={() => SetIsShow(false)}>
-                    <div className={styles.close} onClick={()=>SetIsShow(false)}><IoClose size={50}/></div>
+                    <div className={styles.close} onClick={()=>SetIsShow(false)}><IoClose/></div>
                     <main onClick={(e) => e.stopPropagation()}>
                         <div className={styles.navbarMobile}>
                             <div>Страница 1</div>
@@ -27,11 +27,11 @@ const Head = () => {
                 </div>
             ) : null}
             <div className={styles.logoName}>
-                <Si1Dot1Dot1Dot1 size={50} />
+                <Si1Dot1Dot1Dot1 />
                 <h1>Project</h1>
             </div>
             {isMobile ? (
-                <RxHamburgerMenu size={50} onClick={() => SetIsShow(true)} />
+                <RxHamburgerMenu onClick={() => SetIsShow(true)} />
             ) : (
                 <div className={styles.navbar}>
                     <div className={styles.link}>Страница 1</div>
