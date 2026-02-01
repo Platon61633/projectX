@@ -4,9 +4,12 @@ import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
-import Footer from "../components/Footer";
+import { useMediaQuery } from "react-responsive";
 
 const Main = () => {
+
+    const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
     return (
         <div className={styles.main}>
             <div className={styles.we_is}>
@@ -80,6 +83,8 @@ const Main = () => {
                 </div>
             </div>
             <div className={styles.courses}>
+                {isMobile
+                ?
                 <div className={styles.about}>
                     <h2>Наши курсы</h2>
                     <ul>
@@ -90,8 +95,9 @@ const Main = () => {
                     </ul>
                     <div className="btn-secondary">Подробнее</div>
                 </div>
+                :
+                null}
             </div>
-            <Footer />
         </div>
     );
 };
