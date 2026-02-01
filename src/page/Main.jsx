@@ -9,6 +9,19 @@ import Footer from "../components/Footer";
 const Main = () => {
     return (
         <div className={styles.main}>
+            <div className={styles.we_is}>
+                <div className={styles.stars}></div>
+                <div className={styles.stars2}></div>
+                <div className={styles.stars3}></div>
+                <div className={styles.title}>
+                    <span>
+                        Мы таскаем пушки, а не Rick Owens (Ага, р-ра) <br />
+                        Мы не возим газ кому-то, только если там кореш <br />
+                        Нас с США разделяет не пояс <br />А глубина мысли, беру
+                        её с собой в поезд
+                    </span>
+                </div>
+            </div>
             <Parallax
                 className={styles.parallax}
                 blur={10}
@@ -24,33 +37,37 @@ const Main = () => {
                     пеплом я главу, Из городов бежал я нищий, И вот в пустыне я
                     живу, Как птицы, даром Божьей пищи.
                 </div>
-            </Parallax>
-            <div className={styles.plus}>
-                <h1>Достоинства</h1>
-                <div className={styles.cards}>
-                    <div className={styles.card}>
-                        <h2>1</h2>
-                        <PiStudent size={50} />
-                        <p>
-                            мы вообще классные молодые ребята, ещё перспективные
-                        </p>
-                    </div>
-                    <div className={styles.card}>
-                        <h2>2</h2>
-                        <FaPencilRuler size={50} />
-                        <p>
-                            мы вообще классные молодые ребята, ещё перспективные
-                        </p>
-                    </div>
-                    <div className={styles.card}>
-                        <h2>3</h2>
-                        <FaBook size={50} />
-                        <p>
-                            мы вообще классные молодые ребята, ещё перспективные
-                        </p>
+                <div className={styles.plus}>
+                    <h1 style={{color: 'white'}}>Достоинства</h1>
+                    <div className={styles.cards}>
+                        <div className={styles.card}>
+                            <h2>1</h2>
+                            <PiStudent size={50} />
+                            <p>
+                                мы вообще классные молодые ребята, ещё
+                                перспективные
+                            </p>
+                        </div>
+                        <div className={styles.card}>
+                            <h2>2</h2>
+                            <FaPencilRuler size={50} />
+                            <p>
+                                мы вообще классные молодые ребята, ещё
+                                перспективные
+                            </p>
+                        </div>
+                        <div className={styles.card}>
+                            <h2>3</h2>
+                            <FaBook size={50} />
+                            <p>
+                                мы вообще классные молодые ребята, ещё
+                                перспективные
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Parallax>
+
             <div className={styles.consult}>
                 <div>
                     <h2>Нужна консультация?</h2>
@@ -59,47 +76,22 @@ const Main = () => {
 
                 <img src={consult} alt="" />
                 <div className="btn-primary">
-                    <a href="https://t.me/not_LP">
-                        Задать вопрос
-                    </a>
+                    <a href="https://t.me/not_LP">Задать вопрос</a>
                 </div>
             </div>
             <div className={styles.courses}>
-                <h2>Наши курсы</h2>
-                <div className={styles.cards}>
-                    <div className={styles.card}>
-                        <h2>Курс 1</h2>
-                        <ul>
-                            <li>Две бутылки брагги</li>
-                            <li>Полкилоса кокса</li>
-                            <li>Два патрона</li>
-                            <li>Фундаментальная теория</li>
-                        </ul>
-                        <div className="btn-secondary">Подробнее</div>
-                    </div>
-                    <div className={styles.card}>
-                        <h2>Курс 2</h2>
-                        <ul>
-                            <li>Две бутылки брагги</li>
-                            <li>Полкилоса кокса</li>
-                            <li>Два патрона</li>
-                            <li>Фундаментальная теория</li>
-                        </ul>
-                        <div className="btn-secondary">Подробнее</div>
-                    </div>
-                    <div className={styles.card}>
-                        <h2>Курс 3</h2>
-                        <ul>
-                            <li>Две бутылки брагги</li>
-                            <li>Полкилоса кокса</li>
-                            <li>Два патрона</li>
-                            <li>Фундаментальная теория</li>
-                        </ul>
-                        <div className="btn-secondary">Подробнее</div>
-                    </div>
+                <div className={styles.about}>
+                    <h2>Наши курсы</h2>
+                    <ul>
+                        <li>Оригами в физике</li>
+                        <li>Интенсив по информатике</li>
+                        <li>Python для начинающих</li>
+                        <li>Фундаментальная теория</li>
+                    </ul>
+                    <div className="btn-secondary">Подробнее</div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
