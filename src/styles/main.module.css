@@ -79,11 +79,6 @@
   -webkit-background-clip: text;
 }
 
-@media (width > 1000) {
-    .title{
-        padding: 15px 40px 10px;
-    }
-}
 
 @keyframes animStar {
   from {
@@ -100,6 +95,15 @@
     margin: min(3rem, 25%) min(200px, 25%);
     background: white;
     /* width: max(50%, 300px); */
+}
+
+@media (width < 1000px) {
+    .title{
+        padding: 15px 40px 10px;
+    }
+    .infa{
+        margin: 20px;
+    }
 }
 
 .plus h1{
