@@ -5,9 +5,13 @@ import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
+import teacher1 from "../accept/teachers/1.jpg";
+import teacher2 from "../accept/teachers/2.jpg";
+import teacher3 from "../accept/teachers/3.jpg";
+import teacher4 from "../accept/teachers/4.jpg";
 
 const Main = () => {
-
     const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
     return (
@@ -41,7 +45,7 @@ const Main = () => {
                     живу, Как птицы, даром Божьей пищи.
                 </div>
                 <div className={styles.plus}>
-                    <h1 style={{color: 'white'}}>Достоинства</h1>
+                    <h1 style={{ color: "white" }}>Достоинства</h1>
                     <div className={styles.cards}>
                         <div className={styles.card}>
                             <h2>1</h2>
@@ -83,21 +87,59 @@ const Main = () => {
                 </div>
             </div>
             <div className={styles.courses}>
-                {isMobile
-                ?
-                <div className={styles.about}>
-                    <h2>Наши курсы</h2>
-                    <ul>
-                        <li>Оригами в физике</li>
-                        <li>Интенсив по информатике</li>
-                        <li>Python для начинающих</li>
-                        <li>Фундаментальная теория</li>
-                    </ul>
-                    <div className="btn-secondary">Подробнее</div>
-                </div>
-                :
-                null}
+                {isMobile ? (
+                    <div className={styles.about}>
+                        <h2>Наши курсы</h2>
+                        <ul>
+                            <li>Оригами в физике</li>
+                            <li>Интенсив по информатике</li>
+                            <li>Python для начинающих</li>
+                            <li>Фундаментальная теория</li>
+                        </ul>
+                        <div className="btn-secondary">
+                            <Link to={"/courses"}>Подробнее</Link>
+                        </div>
+                    </div>
+                ) : (
+                    <div className={styles.about}>
+                        <div className={styles.decor}>
+                            {[...Array(15).keys()].map((item, key) => (
+                                <div key={key}></div>
+                            ))}
+                        </div>
+                        <div style={{paddingBottom: '30px'}}>
+                            <h2>Наши курсы</h2>
+
+                            <p>разовые занятия</p>
+                            <p>8 занеятий на месяц</p>
+                            <p>12 занятий на месяц</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>consectetur adipisicing elit. Dolorem</p>
+                            <p>laudantium temporibus molestias labore</p>
+                            <p>cum ipsum et enim omnis</p>
+                            <p>
+                                nemo similique amet, culpa accusantium impedit
+                            </p>
+                            <p>perferendis eius commodi sed officia quae?</p>
+                        </div>
+                        <div className={styles.decor}>
+                            {[...Array(15).keys()].map((item, key) => (
+                                <div key={key}></div>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
+
+            {/* <div className={styles.teachers}>
+                <h2>Наш предовательский состав</h2>
+                <div className={styles.photos}>
+                    <img src={teacher1} alt="" />
+                    <img src={teacher2} alt="" />
+                    <img src={teacher3} alt="" />
+                    <img src={teacher4} alt="" />
+                </div>
+            </div> */}
         </div>
     );
 };

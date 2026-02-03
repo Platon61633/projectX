@@ -91,6 +91,7 @@
 }
 
 .infa{
+    font-size: 1.3rem;
     border-radius: 6px;
     padding: 3rem;
     margin: min(3rem, 25%) min(200px, 25%);
@@ -163,18 +164,56 @@
     justify-content: center;
 }
 
+.courses .about h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .courses .about{
     /* width: max(30%, 300px); */
     background: white;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: var(--shadow);
     transition: transform 0.3s;
     display: flex;
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
 }
+
+.courses .decor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.courses .decor div{
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+}
+
+.courses .decor div:nth-child(2n){
+  background-color: #c4c4c4;
+}
+
+.teachers{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.teachers .photos{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.teachers .photos img{
+  width: 20%;
+  border: 2px solid black;
+}
+
+
 
 @media (width < 1000px) {
     .title{
