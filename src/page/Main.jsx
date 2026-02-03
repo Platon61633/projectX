@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Parallax } from "react-parallax";
 import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
@@ -10,9 +10,13 @@ import teacher1 from "../accept/teachers/1.jpg";
 import teacher2 from "../accept/teachers/2.jpg";
 import teacher3 from "../accept/teachers/3.jpg";
 import teacher4 from "../accept/teachers/4.jpg";
+import { useIsVisible } from "react-is-visible";
 
 const Main = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
+    const CoursesRef = useRef();
+    const CoursesIsVisible = useIsVisible(CoursesRef);
 
     return (
         <div className={styles.main}>
@@ -87,48 +91,45 @@ const Main = () => {
                 </div>
             </div>
             <div className={styles.courses}>
-                {isMobile ? (
-                    <div className={styles.about}>
-                        <h2>Наши курсы</h2>
-                        <ul>
-                            <li>Оригами в физике</li>
-                            <li>Интенсив по информатике</li>
-                            <li>Python для начинающих</li>
-                            <li>Фундаментальная теория</li>
-                        </ul>
-                        <div className="btn-secondary">
-                            <Link to={"/courses"}>Подробнее</Link>
-                        </div>
-                    </div>
-                ) : (
-                    <div className={styles.about}>
-                        <div className={styles.decor}>
-                            {[...Array(15).keys()].map((item, key) => (
+                <div className={styles.about}>
+                    {isMobile ? null : (
+                        <div
+                            className={styles.decor}
+                            style={{ paddingRight: "100px" }}
+                        >
+                            {[...Array(10).keys()].map((item, key) => (
                                 <div key={key}></div>
                             ))}
                         </div>
-                        <div style={{paddingBottom: '30px'}}>
-                            <h2>Наши курсы</h2>
-
+                    )}
+                    <div style={{ paddingBottom: "30px" }}>
+                        <h2>Наши курсы</h2>
+                        <div
+                            className={
+                                CoursesIsVisible ? styles.desc : styles.desc_0
+                            }
+                        >
                             <p>разовые занятия</p>
                             <p>8 занеятий на месяц</p>
                             <p>12 занятий на месяц</p>
                             <p>Lorem ipsum dolor sit amet</p>
-                            <p>consectetur adipisicing elit. Dolorem</p>
-                            <p>laudantium temporibus molestias labore</p>
-                            <p>cum ipsum et enim omnis</p>
-                            <p>
-                                nemo similique amet, culpa accusantium impedit
+                            <p ref={CoursesRef}>
+                                consectetur adipisicing elit. Dolorem
                             </p>
-                            <p>perferendis eius commodi sed officia quae?</p>
                         </div>
-                        <div className={styles.decor}>
-                            {[...Array(15).keys()].map((item, key) => (
+                        <div className="btn-secondary">Подробнее</div>
+                    </div>
+                    {isMobile ? null : (
+                        <div
+                            className={styles.decor}
+                            style={{ paddingLeft: "100px" }}
+                        >
+                            {[...Array(10).keys()].map((item, key) => (
                                 <div key={key}></div>
                             ))}
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
 
             {/* <div className={styles.teachers}>
