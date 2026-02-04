@@ -5,13 +5,13 @@ import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
-import teacher1 from "../accept/teachers/1.jpg";
-import teacher2 from "../accept/teachers/2.jpg";
-import teacher3 from "../accept/teachers/3.jpg";
-import teacher4 from "../accept/teachers/4.jpg";
+// import { Link } from "react-router-dom";
+// import teacher1 from "../accept/teachers/1.jpg";
+// import teacher2 from "../accept/teachers/2.jpg";
+// import teacher3 from "../accept/teachers/3.jpg";
+// import teacher4 from "../accept/teachers/4.jpg";
 import { useIsVisible } from "react-is-visible";
-import { animated, useSpring } from "react-spring";
+// import { animated, useSpring } from "react-spring";
 import AnimatedSVG from "../components/Animated";
 
 const Main = () => {
@@ -25,7 +25,7 @@ const Main = () => {
 
     const [isVisible1, SetisVisible1] = useState(false);
 
-    const [isVisisble2 , SetisVisisble2] = useState(false);
+    // const [isVisisble2 , SetisVisisble2] = useState(false);
     
 
     useMemo(async() => {
