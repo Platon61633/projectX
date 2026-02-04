@@ -13,6 +13,7 @@ import { useMediaQuery } from "react-responsive";
 import { useIsVisible } from "react-is-visible";
 // import { animated, useSpring } from "react-spring";
 import AnimatedSVG from "../components/Animated";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -138,7 +139,7 @@ const Main = () => {
                                     consectetur adipisicing elit. Dolorem
                                 </p>
                             </div>
-                            <div className="btn-secondary">Подробнее</div>
+                            <div className="btn-secondary"><Link to={'/courses'}>Подробнее</Link></div>
                         </div>
                         {isMobile ? null : (
                             <div
