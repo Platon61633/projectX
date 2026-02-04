@@ -32,9 +32,9 @@ const Main = () => {
         if (CoursesIsVisible) {
             SetisVisible1(true);
         }
-        setTimeout(()=>SetisVisisble2(true),
-        5000
-        )
+        // setTimeout(()=>SetisVisisble2(true),
+        // 5000
+        // )
     }, [CoursesIsVisible]);
 
     return (
