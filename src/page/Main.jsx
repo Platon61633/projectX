@@ -23,12 +23,18 @@ const Main = () => {
     // const GeomtrRef = useRef();
     // const GeomtrIsVisible = useIsVisible(GeomtrRef);
 
-    const [isVisible, SetisVisible] = useState(false);
+    const [isVisible1, SetisVisible1] = useState(false);
 
-    useMemo(() => {
+    const [isVisisble2 , SetisVisisble2] = useState(false);
+    
+
+    useMemo(async() => {
         if (CoursesIsVisible) {
-            SetisVisible(true);
+            SetisVisible1(true);
         }
+        setTimeout(()=>SetisVisisble2(true),
+        5000
+        )
     }, [CoursesIsVisible]);
 
     return (
@@ -121,7 +127,7 @@ const Main = () => {
                             <h2>Наши курсы</h2>
                             <div
                                 className={
-                                    isVisible ? styles.desc : styles.desc_0
+                                    isVisible1 ? styles.desc : styles.desc_0
                                 }
                             >
                                 <p>разовые занятия</p>
@@ -147,11 +153,10 @@ const Main = () => {
                     </div>
                 </div>
                 {!isMobile ? 
-                    isVisible?
                     <div className={styles.background}>
-                        <AnimatedSVG />
+                        {isVisible1?<AnimatedSVG />:<div className={styles.s500x500}></div>}
+                        {/* {isVisisble2?<div>hardbus</div>:null} */}
                     </div>
-                    : <div className={styles.s500x500}></div>
                  : null}
             </div>
 
