@@ -6,10 +6,10 @@ import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
 import { useMediaQuery } from "react-responsive";
 // import { Link } from "react-router-dom";
-// import teacher1 from "../accept/teachers/1.jpg";
-// import teacher2 from "../accept/teachers/2.jpg";
-// import teacher3 from "../accept/teachers/3.jpg";
-// import teacher4 from "../accept/teachers/4.jpg";
+import teacher1 from "../accept/teachers/1.jpg";
+import teacher2 from "../accept/teachers/2.jpg";
+import teacher3 from "../accept/teachers/3.jpg";
+import teacher4 from "../accept/teachers/4.jpg";
 import { useIsVisible } from "react-is-visible";
 // import { animated, useSpring } from "react-spring";
 import AnimatedSVG from "../components/Animated";
@@ -139,7 +139,7 @@ const Main = () => {
                                     consectetur adipisicing elit. Dolorem
                                 </p>
                             </div>
-                            <div className="btn-secondary"><Link to={'/courses'}>Подробнее</Link></div>
+                            <Link to={'/courses'}><div className="btn-secondary">Подробнее</div></Link>
                         </div>
                         {isMobile ? null : (
                             <div
@@ -161,7 +161,7 @@ const Main = () => {
                  : null}
             </div>
 
-            {/* <div className={styles.teachers}>
+            <div className={styles.teachers}>
                 <h2>Наш предовательский состав</h2>
                 <div className={styles.photos}>
                     <img src={teacher1} alt="" />
@@ -169,7 +169,7 @@ const Main = () => {
                     <img src={teacher3} alt="" />
                     <img src={teacher4} alt="" />
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };
