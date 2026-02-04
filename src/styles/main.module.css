@@ -159,17 +159,23 @@
 }
 
 .courses{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
 }
 
-.courses .about h2{
+.courses_window{
+    margin-top: 150px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.courses_window .about h2{
   margin-bottom: 30px;
   text-align: center;
 }
 
-.courses .about{
+.courses_window .about{
     /* width: max(30%, 300px); */
     background: white;
     border-radius: 12px;
@@ -179,13 +185,13 @@
     display: flex;
 }
 
-.courses .about .desc_0{
+.courses_window .about .desc_0{
   opacity: 0;
 }
 
 
 
-.courses .about .desc p:nth-child(1){
+.courses_window .about .desc p:nth-child(1){
     animation: desc1 0.5s linear forwards;
     opacity: 0;
 }
@@ -199,7 +205,7 @@
   }
 }
 
-.courses .about .desc p:nth-child(2){
+.courses_window .about .desc p:nth-child(2){
     animation: desc1 0.5s 0.5s linear forwards;
     opacity: 0;
 }
@@ -213,7 +219,7 @@
   }
 }
 
-.courses .about .desc p:nth-child(3){
+.courses_window .about .desc p:nth-child(3){
     animation: desc1 0.5s 1s linear forwards;
     opacity: 0;
 }
@@ -227,7 +233,7 @@
   }
 }
 
-.courses .about .desc p:nth-child(4){
+.courses_window .about .desc p:nth-child(4){
     animation: desc1 0.5s 1.5s linear forwards;
     opacity: 0;
 }
@@ -241,7 +247,7 @@
   }
 }
 
-.courses .about .desc p:nth-child(5){
+.courses_window .about .desc p:nth-child(5){
     animation: desc1 0.5s 2s linear forwards;
     opacity: 0;
     padding-bottom: 30px;
@@ -257,22 +263,38 @@
 }
 
 
-.courses .decor{
+.courses_window .decor{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.courses .decor div{
+.courses_window .decor div{
   width: 10px;
   height: 10px;
   background-color: var(--primary-color);
   border-radius: 100%;
 }
 
-.courses .decor div:nth-child(2n){
+.courses_window .decor div:nth-child(2n){
   background-color: #c4c4c4;
 }
+
+.background{
+  display: inline-block;
+}
+
+.background path{
+  fill: none;
+  stroke: rgb(0, 0, 0);
+}
+
+.s500x500{
+  width: 500px;
+  height: 500px;
+}
+
+
 
 .teachers{
   text-align: center;

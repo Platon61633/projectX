@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Parallax } from "react-parallax";
 import { PiStudent } from "react-icons/pi";
 import { FaPencilRuler, FaBook } from "react-icons/fa";
@@ -11,12 +11,25 @@ import teacher2 from "../accept/teachers/2.jpg";
 import teacher3 from "../accept/teachers/3.jpg";
 import teacher4 from "../accept/teachers/4.jpg";
 import { useIsVisible } from "react-is-visible";
+import { animated, useSpring } from "react-spring";
+import AnimatedSVG from "../components/Animated";
 
 const Main = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
     const CoursesRef = useRef();
     const CoursesIsVisible = useIsVisible(CoursesRef);
+
+    // const GeomtrRef = useRef();
+    // const GeomtrIsVisible = useIsVisible(GeomtrRef);
+
+    const [isVisible, SetisVisible] = useState(false);
+
+    useMemo(() => {
+        if (CoursesIsVisible) {
+            SetisVisible(true);
+        }
+    }, [CoursesIsVisible]);
 
     return (
         <div className={styles.main}>
@@ -90,46 +103,56 @@ const Main = () => {
                     <a href="https://t.me/not_LP">Задать вопрос</a>
                 </div>
             </div>
+
             <div className={styles.courses}>
-                <div className={styles.about}>
-                    {isMobile ? null : (
-                        <div
-                            className={styles.decor}
-                            style={{ paddingRight: "100px" }}
-                        >
-                            {[...Array(10).keys()].map((item, key) => (
-                                <div key={key}></div>
-                            ))}
+                <div className={styles.courses_window}>
+                    <div className={styles.about}>
+                        {isMobile ? null : (
+                            <div
+                                className={styles.decor}
+                                style={{ paddingRight: "100px" }}
+                            >
+                                {[...Array(10).keys()].map((item, key) => (
+                                    <div key={key}></div>
+                                ))}
+                            </div>
+                        )}
+                        <div style={{ paddingBottom: "30px" }}>
+                            <h2>Наши курсы</h2>
+                            <div
+                                className={
+                                    isVisible ? styles.desc : styles.desc_0
+                                }
+                            >
+                                <p>разовые занятия</p>
+                                <p>8 занеятий на месяц</p>
+                                <p>12 занятий на месяц</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <p ref={CoursesRef}>
+                                    consectetur adipisicing elit. Dolorem
+                                </p>
+                            </div>
+                            <div className="btn-secondary">Подробнее</div>
                         </div>
-                    )}
-                    <div style={{ paddingBottom: "30px" }}>
-                        <h2>Наши курсы</h2>
-                        <div
-                            className={
-                                CoursesIsVisible ? styles.desc : styles.desc_0
-                            }
-                        >
-                            <p>разовые занятия</p>
-                            <p>8 занеятий на месяц</p>
-                            <p>12 занятий на месяц</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p ref={CoursesRef}>
-                                consectetur adipisicing elit. Dolorem
-                            </p>
-                        </div>
-                        <div className="btn-secondary">Подробнее</div>
+                        {isMobile ? null : (
+                            <div
+                                className={styles.decor}
+                                style={{ paddingLeft: "100px" }}
+                            >
+                                {[...Array(10).keys()].map((item, key) => (
+                                    <div key={key}></div>
+                                ))}
+                            </div>
+                        )}
                     </div>
-                    {isMobile ? null : (
-                        <div
-                            className={styles.decor}
-                            style={{ paddingLeft: "100px" }}
-                        >
-                            {[...Array(10).keys()].map((item, key) => (
-                                <div key={key}></div>
-                            ))}
-                        </div>
-                    )}
                 </div>
+                {!isMobile ? 
+                    isVisible?
+                    <div className={styles.background}>
+                        <AnimatedSVG />
+                    </div>
+                    : <div className={styles.s500x500}></div>
+                 : null}
             </div>
 
             {/* <div className={styles.teachers}>
