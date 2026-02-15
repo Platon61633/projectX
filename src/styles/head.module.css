@@ -9,6 +9,26 @@ nav{
     /* width: 100%; */
 }
 
+/* scroll */
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.navbar__hidden {
+  transform: translateY(-100%);
+}
+
+.navbar__visible {
+  transform: translateY(0);
+}
+
+
 .left{
     display: flex;
     align-items: center;

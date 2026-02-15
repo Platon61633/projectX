@@ -24,6 +24,9 @@ const AboutWe = () => {
                         потенциал и полюбить математику как увлекательную
                         головоломку.
                     </p>
+                    <div className={styles.button}>
+                        <div className="btn-primary">Подробнее</div>
+                    </div>
                 </div>
                 <img src={arrow} className={styles.arrow1} alt="" />
                 <img className={styles.picture} src={about_us} alt="" />
@@ -47,6 +50,9 @@ const AboutWe = () => {
                         креативности, используя олимпиадные задачи как лучший
                         тренажер для ума.
                     </p>
+                    <div className={styles.button}>
+                        <div className="btn-primary">Подробнее</div>
+                    </div>
                 </div>
             </div>
         </div>

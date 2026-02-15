@@ -44,3 +44,12 @@
 .text h1{
     margin-bottom: 20px;
 }
+
+.text .button{
+    text-align: end;
+    padding-top: 20px;
+}
+
+.text .button div{
+    display: inline-block;
+}
