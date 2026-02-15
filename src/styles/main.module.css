@@ -2229,16 +2229,7 @@
     height: 500px;
 }
 
-.teachers {
-    text-align: center;
-    margin-top: 150px;
-}
 
-.teachers .photos {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
 
 /* .teachers .photos img {
     width: 20%;

@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "../styles/consult.module.css";
+import styles from "../styles/teacher_in_main.module.css";
 import arrow from "../accept/arrow.svg";
 import teacher from "../accept/teacher.png";
 
-const Consult = () => {
+const TeacherInMain = () => {
     return (
-        <div className={styles.consult}>
+        <div className={styles.teacher_in_main}>
             <div className={styles.block_2}>
                 <img className={styles.picture} src={teacher} alt="" />
                 <img src={arrow} className={styles.arrow2} alt="" />
@@ -34,4 +34,4 @@ const Consult = () => {
     );
 };
 
-export default Consult;
+export default TeacherInMain;

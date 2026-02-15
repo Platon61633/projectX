@@ -1,17 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 // import { Parallax } from "react-parallax";
 // import { PiStudent } from "react-icons/pi";
 // import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 // import consult from "../accept/Platon_and_bro.jpg";
 // import { useMediaQuery } from "react-responsive";
-import teacher3 from "../accept/teachers/3.jpg";
 // import teacher4 from "../accept/teachers/4.jpg";
 // import { useIsVisible } from "react-is-visible";
 // import AnimatedSVG from "../components/Animated";
 // import { Link } from "react-router-dom";
 import AboutWe from "../components/About_Us";
-import Consult from "../components/Prepod_Consult";
+import CoursesInMain from "../components/CoursesInMain";
+import TeacherInMain from "../components/TeacherInMain";
+import ConsultInMain from "../components/ConsultInMain";
 
 const Main = () => {
 
@@ -34,16 +35,11 @@ const Main = () => {
 
             <AboutWe/>
 
-            <Consult />
+            <TeacherInMain />
 
+            <CoursesInMain />
 
-            <div className={styles.teachers}>
-                <h2>Наш предовательский состав</h2>
-                <div className={styles.photos}>
-                    <img src={teacher3} alt="" />
-
-                </div>
-            </div>
+            <ConsultInMain />
         </div>
     );
 };

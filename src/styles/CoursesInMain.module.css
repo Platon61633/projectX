@@ -1,0 +1,28 @@
+.CoursesInMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 150px 5rem 0;
+}
+
+section{
+    background-color: white;
+    border-radius: 6px;
+    padding: 3rem;
+}
+
+section h1{
+    padding-bottom: 20px;
+}
+
+.button{
+    margin-top: 30px;
+    text-align: end;
+}
+
+.classes{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin: 0 20px;
+    cursor: pointer;
+}

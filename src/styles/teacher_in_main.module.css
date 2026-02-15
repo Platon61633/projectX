@@ -22,11 +22,11 @@
     transform: rotate(90deg) translate(2px, -8px);
 }
 
-.AboutUs{
+.teacher_in_main{
     margin: 150px 5rem 0;
 }
 
-.AboutUs .picture {
+.teacher_in_main .picture {
     width: 100%;
 }
 
