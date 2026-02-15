@@ -14,34 +14,34 @@ const Head = () => {
     return (
         <div className={styles.head}>
             {IsShow ? (
-                <div className={styles.window} onClick={() => SetIsShow(false)}>
-                    <div className={styles.close} onClick={()=>SetIsShow(false)}><IoClose/></div>
-                    <main onClick={(e) => e.stopPropagation()}>
-                        <div className={styles.navbarMobile}>
-                            <div><Link to={'/'}>Главная</Link></div>
-                            <div><Link to={'/courses'}>Курсы</Link></div>
-                            <div>Страница 3</div>
-                            <div>Страница 4</div>
-                            <div>Страница 5</div>
+                <div>
+                    <div className={styles.back_window} onClick={()=>SetIsShow(false)}>
+                        <div className={styles.window} onClick={(e)=>e.stopPropagation()}>
+                            <IoClose size={50} onClick={()=>SetIsShow(false)}/>
+                            <section>
+                                <p>Главная</p>
+                                <p>Курсы</p>
+                                <p>Преподователи</p>
+                                <p>Страница 4</p>
+                                <p>Страница 5</p>
+                            </section>
                         </div>
-                    </main>
+                    </div>
                 </div>
             ) : null}
-            <div className={styles.logoName}>
-                <Si1Dot1Dot1Dot1 />
-                <h1>Project</h1>
-            </div>
-            {isMobile ? (
-                <RxHamburgerMenu onClick={() => SetIsShow(true)} />
-            ) : (
-                <div className={styles.navbar}>
-                    <div className={styles.link}><Link to={'/'}>Главная</Link></div>
-                    <div className={styles.link}><Link to={'/courses'}>Курсы</Link></div>
-                    <div className={styles.link}>Страница 3</div>
-                    <div className={styles.link}>Страница 4</div>
-                    <div className={styles.link}>Страница 5</div>
+            <nav>
+                <div className={styles.left}>
+                    <RxHamburgerMenu
+                        size={50}
+                        onClick={() => SetIsShow(true)}
+                    />
+                    <p>ka.best</p>
                 </div>
-            )}
+                <div className={styles.right}>
+                    <p>курсы</p>
+                    <p>интенсивы</p>
+                </div>
+            </nav>
         </div>
     );
 };

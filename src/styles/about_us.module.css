@@ -1,0 +1,46 @@
+.block_1 {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 30px 20%;
+    /* gap: 30px; */
+    padding-bottom: 50px;
+}
+
+.block_2 {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 20% 30px 1fr;
+    /* gap: 30px; */
+}
+
+.arrow1{
+    display: inline-block;
+    width: 30px;
+    transform: translateX(-6px);
+}
+
+.arrow2{
+    transform: rotate(90deg) translate(2px, -8px);
+}
+
+.AboutUs{
+    margin: 150px 5rem 0;
+}
+
+.AboutUs .picture {
+    display: inline-block;
+    width: 100%;
+}
+
+.text {
+    align-self: flex-start;
+    display: inline-block;
+    padding: 3rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+}
+
+.text h1{
+    margin-bottom: 20px;
+}

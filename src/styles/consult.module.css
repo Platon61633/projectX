@@ -1,0 +1,29 @@
+.consult{
+    margin: 150px 5rem 0;
+}
+
+.block {
+    /* display: flex; */
+    display: flex;
+    gap: 30px;
+    /* gap: 30px; */
+}
+
+.consult img{
+    width: 20%;
+
+}
+
+.text{
+    padding: 3rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+}
+
+.quadro_2{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    transform: translate(19px, 11px) rotate(45deg);
+}

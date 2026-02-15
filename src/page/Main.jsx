@@ -5,15 +5,19 @@ import { FaPencilRuler, FaBook } from "react-icons/fa";
 import styles from "../styles/main.module.css";
 import consult from "../accept/Platon_and_bro.jpg";
 import { useMediaQuery } from "react-responsive";
-// import { Link } from "react-router-dom";
-import teacher1 from "../accept/teachers/1.jpg";
-import teacher2 from "../accept/teachers/2.jpg";
+// import teacher1 from "../accept/teachers/1.jpg";
+// import teacher2 from "../accept/teachers/2.jpg";
+// import msu from "../accept/msu.png";
+// import mstu from "../accept/mstu.png";
+// import spbgu from "../accept/spbgu.png";
+// import itmo from "../accept/itmo.png";
 import teacher3 from "../accept/teachers/3.jpg";
 import teacher4 from "../accept/teachers/4.jpg";
 import { useIsVisible } from "react-is-visible";
-// import { animated, useSpring } from "react-spring";
 import AnimatedSVG from "../components/Animated";
 import { Link } from "react-router-dom";
+import AboutWe from "../components/About_Us";
+import Consult from "../components/Consult";
 
 const Main = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -53,63 +57,10 @@ const Main = () => {
                     </span>
                 </div>
             </div>
-            <Parallax
-                className={styles.parallax}
-                blur={10}
-                bgImage={require("../accept/gradient.jpg")}
-                bgImageAlt="background"
-                strength={200}
-            >
-                <div className={styles.infa}>
-                    М.Ю.Лермонтов Пророк С тех пор, как Вечный Судия Мне дал
-                    всеведенье пророка, В очах людей читаю я Страницы злобы и
-                    порока. Провозглашать я стал любви И правды чистые ученья, —
-                    В меня все ближние мои Бросали бешено каменья. Посыпал
-                    пеплом я главу, Из городов бежал я нищий, И вот в пустыне я
-                    живу, Как птицы, даром Божьей пищи.
-                </div>
-                <div className={styles.plus}>
-                    <h1 style={{ color: "white" }}>Достоинства</h1>
-                    <div className={styles.cards}>
-                        <div className={styles.card}>
-                            <h2>1</h2>
-                            <PiStudent size={50} />
-                            <p>
-                                мы вообще классные молодые ребята, ещё
-                                перспективные
-                            </p>
-                        </div>
-                        <div className={styles.card}>
-                            <h2>2</h2>
-                            <FaPencilRuler size={50} />
-                            <p>
-                                мы вообще классные молодые ребята, ещё
-                                перспективные
-                            </p>
-                        </div>
-                        <div className={styles.card}>
-                            <h2>3</h2>
-                            <FaBook size={50} />
-                            <p>
-                                мы вообще классные молодые ребята, ещё
-                                перспективные
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </Parallax>
 
-            <div className={styles.consult}>
-                <div>
-                    <h2>Нужна консультация?</h2>
-                    <p>Задайте нам вопрос в чате.</p>
-                </div>
+            <AboutWe/>
 
-                <img src={consult} alt="" />
-                <div className="btn-primary">
-                    <a href="https://t.me/not_LP">Задать вопрос</a>
-                </div>
-            </div>
+            <Consult />
 
             <div className={styles.courses}>
                 <div className={styles.courses_window}>
@@ -164,10 +115,12 @@ const Main = () => {
             <div className={styles.teachers}>
                 <h2>Наш предовательский состав</h2>
                 <div className={styles.photos}>
-                    <img src={teacher1} alt="" />
-                    <img src={teacher2} alt="" />
                     <img src={teacher3} alt="" />
-                    <img src={teacher4} alt="" />
+                    {/* <img src={teacher4} alt="" /> */}
+                    {/* <img src={msu} alt="" /> */}
+                    {/* <img src={mstu} alt="" />
+                    <img src={spbgu} alt="" /> */}
+                    {/* <img src={itmo} alt="" /> */}
                 </div>
             </div>
         </div>

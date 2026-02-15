@@ -1,102 +1,50 @@
-.head {
+nav{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* background-color: white; */
+    /* width: 100%; */
 }
 
-.head svg {
-    font-size: 50px;
-}
-
-.logoName {
+.left{
     display: flex;
     align-items: center;
+    gap: 40px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
-.head h1 {
-    margin-left: 20px;
+.head .left svg, .window svg{
+    cursor: pointer;
 }
 
-.navbar {
-    align-items: center;
+.right{
     display: flex;
     gap: 40px;
-    margin-right: 80px;
-    font-size: 16px;
 }
 
-.head svg {
-    margin: 5px;
-}
-
-.window {
-    z-index: 2;
+.back_window{
+    position: fixed;
     inset: 0;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    background-color: rgba(0, 0, 0, 0.59);
+    background-color: rgba(0, 0, 0, 0.633);
+    z-index: 1;
 }
 
-@keyframes fall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.window main {
-    animation: fall 0.1s linear;
+.window{
+    width: 25%;
+    height: 100vh;
     background-color: white;
-    width: 100%;
-    text-align: center;
 }
 
-.close {
-    cursor: pointer;
-    right: 10px;
-    top: 10px;
-    position: fixed;
-}
+.window section{
 
-.navbarMobile {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    align-items: center;
     gap: 20px;
-}
-
-.link {
-    position: relative;
-    cursor: pointer;
-}
-
-.link::after {
-    width: 0;
-    transition: 0.3s;
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 20px;
-    height: 1px;
-    background: #000;
-}
-.link:hover:after {
-    width: 100%;
-}
-
-
-@media (width < 1000px) {
-    .head {
-        font-size: 10px;
-    }
-    .head svg {
-        font-size: 25px;
-    }
-    .head h1 {
-        margin-left: 10px;
-    }
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
