@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ConsultInMain.module.css";
+import styles from "../styles/consult_in_main.module.css";
 import arrow from "../accept/arrow.svg";
 import consult from "../accept/consult.png";
 

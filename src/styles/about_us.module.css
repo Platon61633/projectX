@@ -22,11 +22,11 @@
     transform: rotate(90deg) translate(2px, -8px);
 }
 
-.AboutUs{
+.AboutUsInMain{
     margin: 150px 5rem 0;
 }
 
-.AboutUs .picture {
+.AboutUsInMain .picture {
     width: 100%;
 }
 
@@ -45,4 +45,20 @@
 .text .button{
     text-align: end;
     padding-top: 20px;
+}
+
+.AboutUs{
+    padding: 10rem 5rem 6rem;
+    background-color: rgb(237, 237, 237);
+}
+
+.desc{
+    display: flex;
+    padding: 0 5rem 30px;
+    font-size: 20px;
+    
+}
+
+.desc img{
+    align-self: flex-start;
 }

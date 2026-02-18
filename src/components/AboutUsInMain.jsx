@@ -3,10 +3,11 @@ import styles from "../styles/about_us.module.css";
 import about_us from "../accept/about_us.png";
 import achievement from "../accept/achievement.png";
 import arrow from "../accept/arrow.svg";
+import { Link } from "react-router-dom";
 
-const AboutWe = () => {
+const AboutUsInMain = () => {
     return (
-        <div className={styles.AboutUs}>
+        <div className={styles.AboutUsInMain}>
             <div className={styles.block_1}>
                 <div className={styles.text}>
                     <h1>О нас</h1>
@@ -25,7 +26,7 @@ const AboutWe = () => {
                         головоломку.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-primary">Подробнее</div>
+                        <div className="btn-primary"><Link to={'about_us'}>Подробнее</Link></div>
                     </div>
                 </div>
                 <img src={arrow} className={styles.arrow1} alt="" />
@@ -59,4 +60,4 @@ const AboutWe = () => {
     );
 };
 
-export default AboutWe;
+export default AboutUsInMain;

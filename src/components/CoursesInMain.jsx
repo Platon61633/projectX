@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/CoursesInMain.module.css";
+import styles from "../styles/courses_in_main.module.css";
 
 const CoursesInMain = () => {
     return (

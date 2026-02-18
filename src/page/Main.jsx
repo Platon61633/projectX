@@ -9,7 +9,7 @@ import styles from "../styles/main.module.css";
 // import { useIsVisible } from "react-is-visible";
 // import AnimatedSVG from "../components/Animated";
 // import { Link } from "react-router-dom";
-import AboutWe from "../components/About_Us";
+import AboutUsInMain from "../components/AboutUsInMain";
 import CoursesInMain from "../components/CoursesInMain";
 import TeacherInMain from "../components/TeacherInMain";
 import ConsultInMain from "../components/ConsultInMain";
@@ -33,7 +33,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <AboutWe/>
+            <AboutUsInMain/>
 
             <TeacherInMain />
 

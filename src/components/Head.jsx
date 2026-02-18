@@ -4,6 +4,7 @@ import styles from "../styles/head.module.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 // import { useMediaQuery } from "react-responsive";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const Head = () => {
@@ -64,10 +65,10 @@ const Head = () => {
                                 onClick={() => SetIsShow(false)}
                             />
                             <section>
-                                <p>Главная</p>
+                                <p><Link to='/' onClick={()=>SetIsShow(false)}>Главная</Link></p>
                                 <p>Курсы</p>
-                                <p>Преподователи</p>
-                                <p>Страница 4</p>
+                                <p><Link to='/teachers' onClick={()=>SetIsShow(false)}>Преподователи</Link></p>
+                                <p><Link to='/about_us' onClick={()=>SetIsShow(false)}>О нас</Link></p>
                                 <p>Страница 5</p>
                             </section>
                         </div>
@@ -80,7 +81,7 @@ const Head = () => {
                         size={50}
                         onClick={() => SetIsShow(true)}
                     />
-                    <p>ka.best</p>
+                    <p><Link to='/'>ka.best</Link></p>
                 </div>
                 <div className={styles.right}>
                     <p>курсы</p>
