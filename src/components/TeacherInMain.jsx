@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/teacher_in_main.module.css";
 import arrow from "../accept/arrow.svg";
 import teacher from "../accept/teacher.png";
+import { Link } from "react-router-dom";
 
 const TeacherInMain = () => {
     return (
@@ -26,7 +27,7 @@ const TeacherInMain = () => {
                         тренажер для ума.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-secondary">Подробнее</div>
+                        <div className="btn-secondary"><Link to='/teachers#top'>Подробнее</Link></div>
                     </div>
                 </div>
             </div>

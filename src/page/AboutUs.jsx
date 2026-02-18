@@ -1,30 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/about_us.module.css";
-import logo from "../accept/achievement.png"
+import Logo from "../components/Logo";
 
 const AboutUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className={styles.AboutUs}>
             <div className={styles.desc}>
                 <p>
-                    ka.best - Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Et numquam molestias reprehenderit
-                    blanditiis repellendus sed pariatur ex qui illum provident
-                    vel natus, in explicabo, officiis eius accusantium expedita
-                    minima voluptas. Ratione maiores repellat vel recusandae
-                    animi, in placeat deserunt nihil fugit ut aspernatur aut
-                    excepturi iusto nesciunt non illum exercitationem.
-                    Repudiandae, magni commodi tenetur quo velit provident
-                    consequatur tempore asperiores. Facilis, voluptate quis
-                    doloribus perspiciatis mollitia ullam provident excepturi
-                    animi nobis aut impedit molestias culpa quibusdam libero
-                    quos quisquam inventore optio iure architecto nam! Culpa,
-                    amet unde! Voluptate, porro animi!
+                    ka.best — это онлайн-школа, где математика становится
+                    инструментом для развития интеллекта. Мы создаём среду, в
+                    которой дети учатся думать нестандартно, анализировать и
+                    получать удовольствие от поиска решений. Мы верим, что навык
+                    решения сложных задач пригодится в любой сфере жизни, будь
+                    то IT, бизнес или наука. В уютных группах до 10 человек мы
+                    помогаем каждому ученику раскрыть свой потенциал и полюбить
+                    математику как увлекательную головоломку.
                 </p>
-                <img width={70} src={logo} alt="" />
+                <Logo />
             </div>
             <div className={styles.desc}>
-                <p>
+                <div>
                     Наши цели -
                     <ul>
                         <li>
@@ -41,7 +40,7 @@ const AboutUs = () => {
                             voluptatibus{" "}
                         </li>
                     </ul>
-                </p>
+                </div>
             </div>
         </div>
     );

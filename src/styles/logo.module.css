@@ -1,0 +1,28 @@
+.picture{
+    align-self: flex-start;
+
+    background-color: white;
+    border-radius: 100%;
+    padding: 0 6.57px;
+    animation: rotate 2s infinite linear;
+}
+
+.Logo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    width: 83.13px;
+    height: 83.13px;
+    z-index: 2;
+}
+
+.Logo img{
+    
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

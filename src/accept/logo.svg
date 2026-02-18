@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.93 412.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 49px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #1d1d1b;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-4 {
+        font-size: 63px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="184.47" cy="217.56" r="178.97"/>
+  <polygon class="cls-2" points="184.31 217.73 188.14 214.67 103.29 13.39 256.48 12.37 184.31 217.73"/>
+  <text class="cls-3" transform="translate(84.76 87.67) rotate(-32.24)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(93.14 82.37) rotate(-29.03)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(101.82 77.54) rotate(-25.81)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(110.76 73.2) rotate(-22.58)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(119.93 69.37) rotate(-19.35)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(128.54 65.44) rotate(-12.19)"><tspan x="0" y="0">b</tspan></text>
+  <text class="cls-4" transform="translate(162.25 58.25) rotate(-1.89)"><tspan x="0" y="0">e</tspan></text>
+  <text class="cls-4" transform="translate(192.6 57.4) rotate(6.79)"><tspan x="0" y="0">s</tspan></text>
+  <text class="cls-4" transform="translate(216.38 60.3) rotate(13.9)"><tspan x="0" y="0">t</tspan></text>
+</svg>

@@ -59,6 +59,6 @@
     
 }
 
-.desc img{
-    align-self: flex-start;
+.desc p{
+    margin-right: 30px;
 }
