@@ -41,6 +41,8 @@ nav{
     cursor: pointer;
 }
 
+
+
 .right{
     display: flex;
     gap: 40px;
@@ -67,4 +69,23 @@ nav{
     gap: 20px;
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+.link {
+    position: relative;
+    cursor: pointer;
+}
+
+.link::after {
+    width: 0;
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 20px;
+    height: 1px;
+    background: #000;
+}
+.link:hover:after {
+    width: 100%;
 }

@@ -1,16 +1,9 @@
-.block_1 {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 30px 20%;
-    /* gap: 30px; */
-    padding-bottom: 50px;
-}
-
 .block_2 {
     /* display: flex; */
     display: grid;
     grid-template-columns: 20% 30px 1fr;
     /* gap: 30px; */
+    font-size: 20px;
 }
 
 .arrow1{

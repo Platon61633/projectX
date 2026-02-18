@@ -84,8 +84,8 @@ const Head = () => {
                     <p><Link to='/'>ka.best</Link></p>
                 </div>
                 <div className={styles.right}>
-                    <p>курсы</p>
-                    <p>интенсивы</p>
+                    <p className={styles.link}>курсы</p>
+                    <p className={styles.link}>интенсивы</p>
                 </div>
             </nav>
         </div>
