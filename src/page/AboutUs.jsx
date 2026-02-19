@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div className={styles.AboutUs}>
                     <section className={styles.s1}>
                         <div className={styles.palka1}></div>
-                        <p>
+                        <p className={styles.big_text}>
                         <h2>
                             О школе ka.best: Математика для жизни, а не для
                             галочки
@@ -80,6 +80,7 @@ const AboutUs = () => {
                         <Logo/>
                     </section>
                     <section className={styles.s2}>
+                        <p className={styles.big_text}>
                         <h3>Наши ценности: Кодекс ka.best</h3>
                         <div>
                             Мы создали среду, в которой ребенку комфортно думать
@@ -145,6 +146,7 @@ const AboutUs = () => {
                             научится получать радость от преодоления сложностей
                             — добро пожаловать в ka.best!
                         </div>
+                        </p>
                     </section>
         </div>
     );
