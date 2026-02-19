@@ -51,35 +51,20 @@
 
 /* ---------page---------------- */
 
-.s1{
-    padding: 10rem 5rem 0;
-    display: flex;
-    
-}
-
-.s2{
-    padding: 1rem 5rem 3rem;
-}
 
 .AboutUs .s1{
     background-color: #E0F0FF;
+    padding: 10rem 5rem 0;
+    display: flex;
+    font-size: 20px;
 }
 
 .AboutUs .s2{
     background-color: #EBFAEC;
-}
-
-.desc{
-    display: flex;
-    /* padding: 0 5rem 30px; */
+    padding: 1rem 5rem 3rem;
     font-size: 20px;
-    
 }
 
-.desc p{
-    margin-right: 30px;
-}
-
-.big_text div{
+.s1 div, .s2 div{
     padding-left: 20px;
 }

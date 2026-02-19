@@ -10,6 +10,7 @@ const AboutUs = () => {
     return (
         <div className={styles.AboutUs}>
                     <section className={styles.s1}>
+                        <div className={styles.palka1}></div>
                         <p>
                         <h2>
                             О школе ka.best: Математика для жизни, а не для
