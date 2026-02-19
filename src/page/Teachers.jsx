@@ -13,11 +13,17 @@ const Teachers = () => {
             <div className={styles.block}>
                 <h2>Преподовательский состав</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Excepturi, officia sapiente! Dolores, vel officia doloremque
-                    ducimus repudiandae recusandae quod nisi rerum impedit
-                    deleniti animi suscipit nesciunt veniam vitae harum
-                    corrupti?
+                    Наши преподаватели — действующие победители и призеры
+                        Всероссийской олимпиады школьников, студенты лучших
+                        вузов России и выпускники сильнейших математических школ
+                        Москвы. Это не просто учителя, а увлеченные своим делом
+                        наставники, которые «горят» математикой и заражают этим
+                        интересом детей. Основатели школы имеют уникальный опыт
+                        преподавания олимпиадной математики на экономическом
+                        факультете МГУ, что гарантирует академическую глубину и
+                        качество программ. Мы делаем упор на развитие логики и
+                        креативности, используя олимпиадные задачи как лучший
+                        тренажер для ума.
                 </p>
             </div>
             <div className={styles.title}>
@@ -26,7 +32,7 @@ const Teachers = () => {
             <div className={styles.cards}>
                 {[0, 0, 0, 0, 0, 0, 0, 0, 0, 0].map((e, id) => (
                     <div className={styles.card} key={id}>
-                        <VscAccount size={70} />
+                        <VscAccount size={120} />
                         <h3>Имя Фамилия</h3>
                         <div>
                             <p>Студент МГУ им. Н. Манделы</p>
