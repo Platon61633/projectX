@@ -62,10 +62,14 @@
 
 .AboutUs .s2{
     background-color: #EBFAEC;
-    padding: 1rem 5rem 5rem;
+    padding: 2rem 5rem 5rem;
 }
 
-.s1 .big_text, .s2 .big_text{
+.AboutUs h2{
+    font-weight: 800;
+}
+
+.s1 .big_text div, .s2 .big_text div{
     padding-left: 20px;
     font-size: 20px;
 }
