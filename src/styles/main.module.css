@@ -4,7 +4,12 @@
     padding-top: 70px;
 }
 
-
+.main hr {
+    border: none;
+    height: 2px;
+    color: #333; 
+    background-color: #333; 
+}
 
 .we_is {
     /* margin-top: 150px; */
@@ -2088,9 +2093,6 @@
     }
 }
 
-
-
-
 .courses {
     display: flex;
     justify-content: space-around;
@@ -2230,8 +2232,6 @@
     height: 500px;
 }
 
-
-
 /* .teachers .photos img {
     width: 20%;
     border: 2px solid black;
@@ -2243,5 +2243,4 @@
         font-size: 1.4rem;
         margin: 0;
     }
-
 }

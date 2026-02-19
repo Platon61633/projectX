@@ -2,10 +2,14 @@
     margin: 150px 5rem 0;
 }
 
+.ConsultInMain .picture{
+    transform: translateY(-40px);
+}
+
 .block {
     /* display: flex; */
     display: grid;
-    grid-template-columns: min-content 30px 20%;
+    grid-template-columns: 250px 30px 20%;
     justify-content: center;
     /* gap: 30px; */
 }
@@ -20,7 +24,7 @@
 }
 
 .ConsultInMain{
-    margin: 150px 5rem 0;
+    margin: 75px 5rem 0;
 }
 
 .ConsultInMain .picture {
@@ -39,7 +43,9 @@
     margin-bottom: 20px;
 }
 
-.text .button{
-    text-align: end;
-    padding-top: 20px;
+.text .buttons{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    height: 40px;
 }

@@ -1,17 +1,23 @@
 .CoursesInMain{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 150px 5rem 0;
+    margin: 75px 5rem 75px;
 }
 
-section{
+.CoursesInMain section{
     background-color: white;
     border-radius: 6px;
     padding: 3rem;
 }
 
-section h1{
+.s1{
+    margin-right: 30%;
+    margin-bottom: 10px;
+}
+
+.s2{
+    margin-left: 30%;
+}
+
+.CoursesInMain section h1{
     padding-bottom: 20px;
 }
 

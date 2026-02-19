@@ -4,7 +4,7 @@ import styles from "../styles/courses_in_main.module.css";
 const CoursesInMain = () => {
     return (
         <div className={styles.CoursesInMain}>
-            <section>
+            <section className={styles.s1}>
                 <h1>Курсы</h1>
                 <p>
                     У нас есть Lorem, ipsum dolor sit amet consectetur
@@ -15,7 +15,7 @@ const CoursesInMain = () => {
                 </p>
                 <h3>классы: <span className={styles.classes}>6</span> <span className={styles.classes}>7</span> <span className={styles.classes}>8</span> <span className={styles.classes}>9</span> <span className={styles.classes}>10-11</span></h3>
             </section>
-            <section>
+            <section className={styles.s2}>
                 <h1>Интенсивы и доп программы</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
