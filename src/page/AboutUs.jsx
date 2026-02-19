@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
         <div className={styles.AboutUs}>
                     <section className={styles.s1}>
-                        <div className={styles.palka1}></div>
+                        <div className={styles.palka1}/>
                         <p className={styles.big_text}>
                         <h2>
                             О школе ka.best: Математика для жизни, а не для
@@ -80,6 +80,7 @@ const AboutUs = () => {
                         <Logo/>
                     </section>
                     <section className={styles.s2}>
+                        <div className={styles.palka2}/>
                         <p className={styles.big_text}>
                         <h3>Наши ценности: Кодекс ka.best</h3>
                         <div>
@@ -147,6 +148,7 @@ const AboutUs = () => {
                             — добро пожаловать в ka.best!
                         </div>
                         </p>
+                        
                     </section>
         </div>
     );
