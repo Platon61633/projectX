@@ -53,7 +53,7 @@
 
 
 .AboutUs .s1{
-    background-color: #E0F0FF;
+    background-color: var(--alice-blue);
     padding: 10rem 5rem 0;
     display: flex;
 }
@@ -61,7 +61,7 @@
 
 
 .AboutUs .s2{
-    background-color: #EBFAEC;
+    background-color: var(--frosted-mind);
     padding: 2rem 5rem 5rem;
 }
 
@@ -78,7 +78,7 @@
     position: absolute;
     width: 20px;
     height: 1000px;
-    background-color: #2D69FF;
+    background-color: var(--ultramarin-blue);
     transform: translate(-3rem, -40px);
 }
 
@@ -87,6 +87,6 @@
     right: 2rem;
     width: 20px;
     height: 900px;
-    background-color: #4AA97D;
+    background-color: var(--green-field);
     transform: translate(0, -20rem);
 }

@@ -1,6 +1,7 @@
 .Teachers{
-    background-color: rgb(237, 237, 237);
+    background-color: var(--alice-blue);
     padding: calc(70px + 1rem) 3rem 2rem 3rem;
+
 }
 
 .block{
