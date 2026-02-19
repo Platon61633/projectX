@@ -24,6 +24,7 @@
 
 .AboutUsInMain{
     margin: 150px 5rem 0;
+
 }
 
 .AboutUsInMain .picture {
@@ -48,9 +49,16 @@
     padding-top: 20px;
 }
 
-.AboutUs{
-    padding: 10rem 5rem 6rem;
-    background-color: rgb(237, 237, 237);
+/* ---------page---------------- */
+
+.s1{
+    padding: 10rem 5rem 0;
+    display: flex;
+    
+}
+
+.s2{
+    padding: 1rem 5rem 3rem;
 }
 
 .AboutUs .s1{
@@ -63,7 +71,7 @@
 
 .desc{
     display: flex;
-    padding: 0 5rem 30px;
+    /* padding: 0 5rem 30px; */
     font-size: 20px;
     
 }

@@ -9,9 +9,8 @@ const AboutUs = () => {
 
     return (
         <div className={styles.AboutUs}>
-            <div className={styles.desc}>
-                <p className={styles.big_text}>
                     <section className={styles.s1}>
+                        <p>
                         <h2>
                             О школе ka.best: Математика для жизни, а не для
                             галочки
@@ -76,6 +75,8 @@ const AboutUs = () => {
                             жизни.
                         </div>
                         <br />
+                        </p>
+                        <Logo/>
                     </section>
                     <section className={styles.s2}>
                         <h3>Наши ценности: Кодекс ka.best</h3>
@@ -144,9 +145,6 @@ const AboutUs = () => {
                             — добро пожаловать в ka.best!
                         </div>
                     </section>
-                </p>
-                <Logo />
-            </div>
         </div>
     );
 };
