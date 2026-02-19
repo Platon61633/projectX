@@ -32,6 +32,7 @@ const Teachers = () => {
                             <p>Студент МГУ им. Н. Манделы</p>
                             <p>Возраст: 18 лет</p>
                             <p>Стаж: 2 года</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
                         </div>
                     </div>
                 ))}

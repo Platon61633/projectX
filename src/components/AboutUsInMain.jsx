@@ -51,7 +51,7 @@ const AboutUsInMain = () => {
                         тренажер для ума.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-primary">Подробнее</div>
+                        <div className="btn-primary"><Link to={'/about_us'}>Подробнее</Link></div>
                     </div>
                 </div>
             </div>
