@@ -50,7 +50,15 @@
 
 .AboutUs{
     padding: 10rem 5rem 6rem;
+    background-color: rgb(237, 237, 237);
+}
+
+.AboutUs .s1{
     background-color: #E0F0FF;
+}
+
+.AboutUs .s2{
+    background-color: #EBFAEC;
 }
 
 .desc{
