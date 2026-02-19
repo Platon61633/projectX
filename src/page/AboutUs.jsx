@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
         <div className={styles.AboutUs}>
             <div className={styles.desc}>
-                <p>
+                <p className={styles.big_text}>
                     <h2>
                         О школе ka.best: Математика для жизни, а не для галочки
                     </h2>
