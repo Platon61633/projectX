@@ -23,15 +23,18 @@
     font-size: 360px;
     color: white;
     margin: 0 5rem;
+    /* font-weight: 800; */
 }
 
 .title .desc{
     position: absolute;
     width: 100%;
-    transform: translateY(250px);
-    font-size: 25px;
-    font-family: "Luxury";
+    /* bottom: 0; */
+    transform: translateY(344px);
+    font-size: 30px;
+    /* font-family: "Luxury"; */
     text-align: center;
+    font-weight: 700;
 }
 
 /* .title p{
