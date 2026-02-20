@@ -12,9 +12,9 @@ const AboutUs = () => {
             <section className={styles.s1}>
                 {/* <div className={styles.palka1}/> */}
                 <p className={styles.big_text}>
-                    <h2>
-                        О школе ka.best: Математика для жизни, а не для галочки
-                    </h2>
+                    <div className={styles.title}>
+                        <strong>О школе ka.best:</strong> Математика для жизни, а не для галочки
+                    </div>
                     <br />
                     <br />
                     <div className={styles.block1}>

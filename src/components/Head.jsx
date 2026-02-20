@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 // import { useMediaQuery } from "react-responsive";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 // import { Link } from "react-router-dom";
 
 const Head = () => {
@@ -19,7 +19,7 @@ const Head = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            
+
             // Determine scroll direction
             if (currentScrollY > prevScrollY.current) {
                 // Scrolling down -> hide navbar
@@ -50,7 +50,9 @@ const Head = () => {
     }, []); // Empty dependency array ensures the effect runs only once
 
     return (
-        <div className={`${styles.head} ${visible ? styles.navbar__hidden : styles.navbar__visible}`}>
+        <div
+            className={`${styles.head} ${visible ? styles.navbar__hidden : styles.navbar__visible}`}
+        >
             {IsShow ? (
                 <div>
                     <div
@@ -65,13 +67,46 @@ const Head = () => {
                                 size={50}
                                 onClick={() => SetIsShow(false)}
                             />
-                            
+
                             <section>
-                                <p><Link to='/' onClick={()=>SetIsShow(false)}>Главная</Link></p>
-                                <p><Link to="/courses" onClick={()=>SetIsShow(false)}>Курсы</Link></p>
-                                <p><Link to='/teachers' onClick={()=>SetIsShow(false)}>Преподователи</Link></p>
-                                <p><Link to='/about_us' onClick={()=>SetIsShow(false)}>О нас</Link></p>
-                                <p>Страница 5</p>
+                                <p>
+                                    <Link
+                                        to="/"
+                                        onClick={() => SetIsShow(false)}
+                                    >
+                                        Главная
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link
+                                        to="/courses"
+                                        onClick={() => SetIsShow(false)}
+                                    >
+                                        Курсы
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link
+                                        to="/intensive"
+                                        onClick={() => SetIsShow(false)}
+                                        >Интентсивы</Link>
+                                </p>
+                                <p>
+                                    <Link
+                                        to="/teachers"
+                                        onClick={() => SetIsShow(false)}
+                                    >
+                                        Преподователи
+                                    </Link>
+                                </p>
+                                <p>
+                                    <Link
+                                        to="/about_us"
+                                        onClick={() => SetIsShow(false)}
+                                    >
+                                        О нас
+                                    </Link>
+                                </p>
                             </section>
                         </div>
                     </div>
@@ -83,13 +118,19 @@ const Head = () => {
                         size={50}
                         onClick={() => SetIsShow(true)}
                     />
-                    <p><Link to='/'>ka.best</Link></p>
+                    <p>
+                        <Link to="/">ka.best</Link>
+                    </p>
                 </div>
                 <div className={styles.right}>
                     <p className={styles.link}>
-                        <HashLink smooth to='/#div' >Курсы и интенсивы</HashLink>
+                        <HashLink smooth to="/#div">
+                            курсы
+                        </HashLink>
                     </p>
-                    {/* <p className={styles.link}>интенсивы</p> */}
+                    <p className={styles.link}>
+                        <Link to="/intensive"> интенсивы</Link>
+                    </p>
                 </div>
             </nav>
         </div>

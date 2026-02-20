@@ -67,8 +67,9 @@
     padding: 2rem 5rem 5rem;
 }
 
-.AboutUs h2{
-    font-weight: 800;
+
+.AboutUs .title{
+    font-size: 35px !important;
 }
 
 .s1 .big_text div, .s2 .big_text div{

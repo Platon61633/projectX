@@ -47,7 +47,9 @@ const CoursesInMain = () => {
                     cumque unde tenetur magnam?
                 </p>
                 <div className={styles.button}>
-                    <div className="btn-primary">Перейти</div>
+                    <div className="btn-primary">
+                        <Link to={"/intensive"}>Перейти</Link>
+                    </div>
                 </div>
             </section>
         </div>
