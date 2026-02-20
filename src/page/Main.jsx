@@ -35,11 +35,12 @@ const Main = () => {
             </div> */}
             
             <div className={styles.title}>
+                <div className={styles.desc}>Школа, которая переворачивает привычное представление  математике</div>
                 <p>
-                    Школа, которая переворачивает привычное предствление о математике
+                    KA.BEST
                 </p>
 
-                <img src={msu} alt="" />
+                {/* <img src={msu} alt="" /> */}
             </div>
 
 
