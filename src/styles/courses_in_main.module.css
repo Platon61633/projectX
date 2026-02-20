@@ -1,5 +1,6 @@
 .CoursesInMain{
-    margin: 75px 5rem 75px;
+    padding: 75px 5rem 75px;
+    background-color: #a2adfe33;
 }
 
 .CoursesInMain section{
@@ -12,6 +13,7 @@
     margin-right: 30%;
     margin-bottom: 40px;
     font-size: 20px;
+    background-color: var(--alice-blue);
 }
 
 .s1 section{
@@ -23,6 +25,7 @@
 .s2{
     margin-left: 30%;
     font-size: 20px;
+    background-color: var(--alice-blue);
 }
 
 .CoursesInMain section h1{

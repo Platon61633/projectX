@@ -13,6 +13,7 @@ import AboutUsInMain from "../components/AboutUsInMain";
 import CoursesInMain from "../components/CoursesInMain";
 import TeacherInMain from "../components/TeacherInMain";
 import ConsultInMain from "../components/ConsultInMain";
+import msu from '../accept/msu_main.jpg'
 
 const Main = () => {
 
@@ -33,7 +34,7 @@ const Main = () => {
                 </div>
             </div> */}
 
-            <div>
+            <div className={styles.title}>
                 KA.BEST
             </div>
 

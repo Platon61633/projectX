@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/teacher_in_main.module.css";
-import arrow from "../accept/arrow.svg";
+// import arrow from "../accept/arrow.svg";
 import teacher from "../accept/achievement.png";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,6 @@ const TeacherInMain = () => {
         <div className={styles.teacher_in_main}>
             <div className={styles.block_2}>
                 <img className={styles.picture} src={teacher} alt="" />
-                <img src={arrow} className={styles.arrow2} alt="" />
 
                 <div className={styles.text}>
                     <h1>Преподователи</h1>
