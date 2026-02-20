@@ -1,0 +1,26 @@
+.MMO{
+    padding: 90px 5rem 3rem;
+    background-color: var(--alice-blue);
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.block1, .block2{
+    width: 80%;
+    background-color: #a2adfe33;
+    padding: 3rem;
+    font-size: 25px;
+    border-radius: 6px;
+    margin-top: 3rem;
+}
+
+.block2{
+    margin-left: 20%;
+}
+
+.block1 h2, .block2 h2{
+    margin-bottom: 20px;
+}

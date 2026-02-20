@@ -7,6 +7,7 @@ import Courses from './page/Courses';
 import AboutUs from './page/AboutUs';
 import Teachers from './page/Teachers';
 import Intensive from './page/Intensive';
+import MMO from './page/MMO';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/about_us' element={<AboutUs/>} />
             <Route path='/teachers' element={<Teachers/>} />
             <Route path='/intensive' element={<Intensive/>}/>
+            <Route path='/mmo' element={<MMO/>} />
           </Routes>
         </main>
         <Footer />

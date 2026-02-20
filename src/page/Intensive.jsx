@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../styles/intensive.module.css";
+import { Link } from "react-router-dom";
 
 const Intensive = () => {
     useEffect(() => {
@@ -21,7 +22,9 @@ const Intensive = () => {
                             <div className={styles.date}>Дата проведения: 20.02.2020-20.02.2026</div>
                             <div className={styles.status}>Статус: Активно</div>
                             <div className={styles.button}>
-                                <div className="btn-primary">Подробнее</div>
+                                <div className="btn-primary">
+                                    <Link to={'/mmo'}>Подробнее</Link>
+                                </div>
                             </div>
                             
                     </div>
