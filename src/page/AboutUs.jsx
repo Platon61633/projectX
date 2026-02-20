@@ -9,15 +9,15 @@ const AboutUs = () => {
 
     return (
         <div className={styles.AboutUs}>
-                    <section className={styles.s1}>
-                        <div className={styles.palka1}/>
-                        <p className={styles.big_text}>
-                        <h2>
-                            О школе ka.best: Математика для жизни, а не для
-                            галочки
-                        </h2>
-                        <br />
-                        <br />
+            <section className={styles.s1}>
+                {/* <div className={styles.palka1}/> */}
+                <p className={styles.big_text}>
+                    <h2>
+                        О школе ka.best: Математика для жизни, а не для галочки
+                    </h2>
+                    <br />
+                    <br />
+                    <div className={styles.block1}>
                         <h3>Кто мы такие</h3>
                         <div>
                             ka.best — это онлайн-школа, которая переворачивает
@@ -37,7 +37,9 @@ const AboutUs = () => {
                             главным конкурентным преимуществом в будущем, будь
                             то IT, наука, бизнес или любая другая сфера.
                         </div>
-                        <br />
+                    </div>
+                    <br />
+                    <div className={styles.block2}>
                         <h3>Наша история</h3>
                         <div>
                             Школа ka.best родилась из практики и глубокого
@@ -56,7 +58,9 @@ const AboutUs = () => {
                             полетов.
                             <br />
                         </div>
-                        <br />
+                    </div>
+                    <br />
+                    <div className={styles.block3}>
                         <h3>Наши преподаватели</h3>
                         <div>
                             В ka.best работают те, кто сам прошел этот путь с
@@ -75,13 +79,15 @@ const AboutUs = () => {
                             детям, потому что для них это не работа, а образ
                             жизни.
                         </div>
-                        <br />
-                        </p>
-                        <Logo/>
-                    </section>
-                    <section className={styles.s2}>
-                        <div className={styles.palka2}/>
-                        <p className={styles.big_text}>
+                    </div>
+                    <br />
+                    {/* </p> */}
+
+                    {/* </section> */}
+                    {/* <section className={styles.s2}> */}
+                    {/* <div className={styles.palka2}/> */}
+                    {/* <p className={styles.big_text}> */}
+                    <div className={styles.block4}>
                         <h3>Наши ценности: Кодекс ka.best</h3>
                         <div>
                             Мы создали среду, в которой ребенку комфортно думать
@@ -101,7 +107,9 @@ const AboutUs = () => {
                             когда ученик говорит: «А давайте попробуем решить
                             по-другому!».
                         </div>
-                        <br />
+                    </div>
+                    <br />
+                    <div className={styles.block5}>
                         <h3>Как мы учим: Наш формат</h3>
                         <div>
                             Мы отказались от скучных лекций в пользу живого
@@ -122,8 +130,10 @@ const AboutUs = () => {
                             всегда продолжение увлекательного процесса, а не
                             скучная обязаловка.
                         </div>
+                    </div>
 
-                        <br />
+                    <br />
+                    <div className={styles.block6}>
                         <h3>
                             Кому наша школа подойдет не идеально? (Честный
                             разговор)
@@ -147,9 +157,10 @@ const AboutUs = () => {
                             научится получать радость от преодоления сложностей
                             — добро пожаловать в ka.best!
                         </div>
-                        </p>
-                        
-                    </section>
+                    </div>
+                </p>
+                <Logo />
+            </section>
         </div>
     );
 };

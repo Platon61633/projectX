@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CoursesInMain = () => {
     return (
-        <div className={styles.CoursesInMain}>
+        <div className={styles.CoursesInMain} id="div">
             <section className={styles.s1}>
                 <h1>Курсы</h1>
                 <p>

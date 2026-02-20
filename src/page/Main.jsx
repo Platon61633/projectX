@@ -35,7 +35,7 @@ const Main = () => {
             </div> */}
             
             <div className={styles.title}>
-                <div className={styles.desc}>Школа, которая переворачивает привычное представление  математике</div>
+                <div className={styles.desc}>Школа, которая переворачивает привычное представление о математике</div>
                 <p>
                     KA.BEST
                 </p>
@@ -48,7 +48,7 @@ const Main = () => {
 
             <TeacherInMain />
             <hr />
-            <CoursesInMain />
+            <CoursesInMain/>
             <hr />
             <ConsultInMain />
         </div>

@@ -56,7 +56,7 @@
 
 .AboutUs .s1{
     background-color: var(--alice-blue);
-    padding: 10rem 5rem 0;
+    padding: 10rem 5rem 3rem;
     display: flex;
 }
 
@@ -73,7 +73,7 @@
 
 .s1 .big_text div, .s2 .big_text div{
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .palka1{
@@ -91,4 +91,24 @@
     height: 900px;
     background-color: var(--green-field);
     transform: translate(0, -20rem);
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6{
+    padding: 40px 60px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.block1 h3, .block2 h3, .block3 h3, .block4 h3, .block5 h3, .block6 h3{
+    padding-bottom: 30px;
+}
+
+.block1, .block3, .block5{
+    margin-right: 300px;
+    margin-bottom: 30px;
+}
+
+.block2, .block4, .block6{
+    margin-left: 300px;
+    margin-bottom: 30px;
 }

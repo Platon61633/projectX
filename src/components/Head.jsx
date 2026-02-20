@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 // import { useMediaQuery } from "react-responsive";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 // import { Link } from "react-router-dom";
 
 const Head = () => {
@@ -67,7 +68,7 @@ const Head = () => {
                             
                             <section>
                                 <p><Link to='/' onClick={()=>SetIsShow(false)}>Главная</Link></p>
-                                <p>Курсы</p>
+                                <p><Link to="/courses" onClick={()=>SetIsShow(false)}>Курсы</Link></p>
                                 <p><Link to='/teachers' onClick={()=>SetIsShow(false)}>Преподователи</Link></p>
                                 <p><Link to='/about_us' onClick={()=>SetIsShow(false)}>О нас</Link></p>
                                 <p>Страница 5</p>
@@ -85,7 +86,9 @@ const Head = () => {
                     <p><Link to='/'>ka.best</Link></p>
                 </div>
                 <div className={styles.right}>
-                    <p className={styles.link}>курсы и интенсивы</p>
+                    <p className={styles.link}>
+                        <HashLink smooth to='/#div' >Курсы и интенсивы</HashLink>
+                    </p>
                     {/* <p className={styles.link}>интенсивы</p> */}
                 </div>
             </nav>
