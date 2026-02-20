@@ -125,12 +125,12 @@ const Head = () => {
                 <div className={styles.right}>
                     <p className={styles.link}>
                         <HashLink smooth to="/#div">
-                            курсы
+                            Курсы и интенсивы
                         </HashLink>
                     </p>
-                    <p className={styles.link}>
+                    {/* <p className={styles.link}>
                         <Link to="/intensive"> интенсивы</Link>
-                    </p>
+                    </p> */}
                 </div>
             </nav>
         </div>

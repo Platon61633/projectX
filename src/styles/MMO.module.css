@@ -1,5 +1,5 @@
 .MMO{
-    padding: 90px 5rem 3rem;
+    padding: 150px 5rem 3rem;
     background-color: var(--alice-blue);
 }
 
@@ -14,13 +14,55 @@
     padding: 3rem;
     font-size: 25px;
     border-radius: 6px;
-    margin-top: 3rem;
+}
+
+.block1{
+    margin-top: 8rem;
 }
 
 .block2{
     margin-left: 20%;
+    margin-top: 3rem;
 }
 
 .block1 h2, .block2 h2{
     margin-bottom: 20px;
+}
+
+.MMO h1{
+    margin: 100px 0 50px;
+    text-align: center;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 70px 10px 70px;
+    border-radius: 6px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card p{
+    width: 20vw;
+    text-align: center;
+}
+
+.card h3{
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.cards{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
