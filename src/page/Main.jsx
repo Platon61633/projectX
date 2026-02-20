@@ -33,10 +33,15 @@ const Main = () => {
                     </span>
                 </div>
             </div> */}
-
+            
             <div className={styles.title}>
-                KA.BEST
+                <p>
+                    Школа, которая переворачивает привычное предствление о математике
+                </p>
+
+                <img src={msu} alt="" />
             </div>
+
 
             <AboutUsInMain/>
 
