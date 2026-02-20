@@ -64,6 +64,7 @@ const Head = () => {
                                 size={50}
                                 onClick={() => SetIsShow(false)}
                             />
+                            
                             <section>
                                 <p><Link to='/' onClick={()=>SetIsShow(false)}>Главная</Link></p>
                                 <p>Курсы</p>
@@ -84,8 +85,8 @@ const Head = () => {
                     <p><Link to='/'>ka.best</Link></p>
                 </div>
                 <div className={styles.right}>
-                    <p className={styles.link}>курсы</p>
-                    <p className={styles.link}>интенсивы</p>
+                    <p className={styles.link}>курсы и интенсивы</p>
+                    {/* <p className={styles.link}>интенсивы</p> */}
                 </div>
             </nav>
         </div>

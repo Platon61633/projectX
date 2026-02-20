@@ -1,5 +1,5 @@
 .main {
-    background-color: rgb(237, 237, 237);
+    background-color: var(--alice-blue);
     padding-bottom: 100px;
     padding-top: 70px;
 }

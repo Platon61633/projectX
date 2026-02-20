@@ -19,7 +19,7 @@ const Main = () => {
 
     return (
         <div className={styles.main}>
-            <div className={styles.we_is}>
+            {/* <div className={styles.we_is}>
                 <div className={styles.stars}></div>
                 <div className={styles.stars2}></div>
                 <div className={styles.stars3}></div>
@@ -31,6 +31,10 @@ const Main = () => {
                         её с собой в поезд
                     </span>
                 </div>
+            </div> */}
+
+            <div>
+                KA.BEST
             </div>
 
             <AboutUsInMain/>

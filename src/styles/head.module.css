@@ -45,30 +45,41 @@ nav{
 
 .right{
     display: flex;
+    font-size: 19px;
     gap: 40px;
+    margin-right: 40px;
 }
 
 .back_window{
     position: fixed;
     inset: 0;
-    height: 100vh;
+    height: 200vh;
     background-color: rgba(0, 0, 0, 0.633);
+    animation: MoveRight 0.2s linear;
+}
+
+@keyframes MoveRight {
+    0% { left: -25%; }
+    100% { left: 0; }
 }
 
 .window{
     width: 25%;
-    height: 100vh;
+    height: 200vh;
     background-color: white;
 }
+
 
 .window section{
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
     padding-bottom: 30px;
     padding-top: 30px;
+    font-size: 20px;
 }
 
 .link {

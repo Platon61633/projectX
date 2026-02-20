@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/about_us.module.css";
 import about_us from "../accept/about_us.png";
-import achievement from "../accept/achievement.png";
+import achievement from "../accept/about_us.png";
+import bruh from "../accept/bruh.png";
 import arrow from "../accept/arrow.svg";
 import { Link } from "react-router-dom";
 
@@ -29,7 +30,7 @@ const AboutUsInMain = () => {
                     </div>
                 </div>
                 <img src={arrow} className={styles.arrow1} alt="" />
-                <img className={styles.picture} src={about_us} alt="" />
+                <img className={styles.picture} src={bruh} alt="" />
             </div>
             <div className={styles.block_2}>
                 <img className={styles.picture} src={achievement} alt="" />

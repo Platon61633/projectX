@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/courses_in_main.module.css";
+import { Link } from "react-router-dom";
 
 const CoursesInMain = () => {
     return (
@@ -13,7 +14,29 @@ const CoursesInMain = () => {
                     Sequi, suscipit molestiae quidem doloremque quo mollitia
                     placeat? Modi, consequatur.
                 </p>
-                <h3>классы: <span className={styles.classes}>6</span> <span className={styles.classes}>7</span> <span className={styles.classes}>8</span> <span className={styles.classes}>9</span> <span className={styles.classes}>10-11</span></h3>
+                <section>
+                    <h3>классы подготовки:</h3>
+                    <div className={styles.classes}>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>1-6</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>7</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>8</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>9</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>10</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to={"/courses"}>11</Link>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section className={styles.s2}>
                 <h1>Интенсивы и доп программы</h1>

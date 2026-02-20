@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/teacher_in_main.module.css";
 import arrow from "../accept/arrow.svg";
-import teacher from "../accept/teacher.png";
+import teacher from "../accept/achievement.png";
 import { Link } from "react-router-dom";
 
 const TeacherInMain = () => {
@@ -12,7 +12,7 @@ const TeacherInMain = () => {
                 <img src={arrow} className={styles.arrow2} alt="" />
 
                 <div className={styles.text}>
-                    <h1>Преподы</h1>
+                    <h1>Преподователи</h1>
                     <p>
                         Наши преподаватели — действующие победители и призеры
                         Всероссийской олимпиады школьников, студенты лучших

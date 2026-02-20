@@ -1,9 +1,9 @@
 .block_2 {
     /* display: flex; */
     display: grid;
-    grid-template-columns: 20% 30px 1fr;
+    grid-template-columns: 30% 30px 1fr;
     /* gap: 30px; */
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .arrow1{
@@ -29,6 +29,7 @@
     background-color: white;
     /* border: 1px solid black; */
     border-radius: 8px;
+    background-color: white;
 }
 
 .text h1{

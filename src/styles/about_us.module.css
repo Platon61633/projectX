@@ -1,7 +1,7 @@
 .block_1 {
     /* display: flex; */
     display: grid;
-    grid-template-columns: 1fr 30px 20%;
+    grid-template-columns: 1fr 30px 30%;
     /* gap: 30px; */
     padding-bottom: 50px;
 }
@@ -9,7 +9,7 @@
 .block_2 {
     /* display: flex; */
     display: grid;
-    grid-template-columns: 20% 30px 1fr;
+    grid-template-columns: 30% 30px 1fr;
     /* gap: 30px; */
 }
 
@@ -37,11 +37,12 @@
     background-color: white;
     /* border: 1px solid black; */
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .text h1{
     margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .text .button{
