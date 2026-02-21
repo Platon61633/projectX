@@ -44,8 +44,7 @@ const MMO = () => {
                     людьми, которые сами успешно их решали.
                     <br />
                     · 14 живых занятий с преподавателями, занимавшими призовые
-                    места на ВСОШ(хотя мб меньше надо конечно, например раз в
-                    два дня).
+                    места на ВСОШ.
                     <br />
                     · Разбор реальных задач прошлых лет + авторские задачи от
                     составителей
@@ -126,28 +125,37 @@ const MMO = () => {
                 </div>
                 {ShowResult ? (
                     <p className={styles.text}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Alias sequi ratione consectetur molestias iure facere
-                        expedita, obcaecati fugit deleniti? Quia aliquam
-                        corrupti sed voluptates neque reprehenderit quis
-                        cupiditate dicta consequuntur! Fuga a sequi hic illum
-                        nobis placeat voluptatibus, magnam accusantium eum
-                        fugiat tenetur quasi expedita accusamus animi
-                        architecto, vel tempore, officiis omnis! Atque quia,
-                        harum ducimus sequi fugit rerum et. Cupiditate ex ullam
-                        aperiam cumque fuga dolor dignissimos repudiandae est
-                        sed iusto incidunt recusandae quaerat quia accusantium
-                        architecto, neque, eum voluptatem, molestiae fugit
-                        voluptate laborum eveniet? Debitis dignissimos cumque
-                        quidem! Laboriosam quam, sed blanditiis obcaecati minima
-                        minus ipsam excepturi ad veniam earum magni odio
-                        veritatis sapiente iusto. Voluptatum reprehenderit quae,
-                        ex laudantium hic impedit accusamus, consequatur tenetur
-                        quidem, modi repellendus.
+                        Что вы получите на выходе Для 11-классников:
+                        <br />
+                        · Реалистичную оценку своих шансов на диплом ММО.
+                        <br />
+                        · Понимание критериев оценивания (чтобы не терять баллы
+                        на пустом месте).
+                        <br />
+                        · Готовность бороться за БВИ в топовые вузы.
+                        <br />
+                        Для 7-8 классов:
+                        <br />
+                        · Первый серьезный опыт решения олимпиадных задач под
+                        руководством профи.
+                        <br />
+                        · Понимание своей траектории: что подтянуть, куда
+                        двигаться дальше.
+                        <br />
+                        · Уверенность на туре и отсутствие страха перед сложными
+                        формулировками. Общее:
+                        <br />
+                        · Вы закроете пробелы в комбинаторике, теории чисел,
+                        геометрии и алгебре.
+                        <br />
+                        · Научитесь распределять время и не застревать на одной
+                        задаче.
+                        <br />· Поймете логику составителей: что именно они
+                        хотят проверить.
                     </p>
                 ) : null}
             </section>
-            <section className={styles.info} style={{marginBottom: 100}}>
+            <section className={styles.info} style={{ marginBottom: 100 }}>
                 <div
                     className={styles.title}
                     onClick={() => {
@@ -163,33 +171,48 @@ const MMO = () => {
                 </div>
                 {FourReason ? (
                     <p className={styles.text}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Alias sequi ratione consectetur molestias iure facere
-                        expedita, obcaecati fugit deleniti? Quia aliquam
-                        corrupti sed voluptates neque reprehenderit quis
-                        cupiditate dicta consequuntur! Fuga a sequi hic illum
-                        nobis placeat voluptatibus, magnam accusantium eum
-                        fugiat tenetur quasi expedita accusamus animi
-                        architecto, vel tempore, officiis omnis! Atque quia,
-                        harum ducimus sequi fugit rerum et. Cupiditate ex ullam
-                        aperiam cumque fuga dolor dignissimos repudiandae est
-                        sed iusto incidunt recusandae quaerat quia accusantium
-                        architecto, neque, eum voluptatem, molestiae fugit
-                        voluptate laborum eveniet? Debitis dignissimos cumque
-                        quidem! Laboriosam quam, sed blanditiis obcaecati minima
-                        minus ipsam excepturi ad veniam earum magni odio
-                        veritatis sapiente iusto. Voluptatum reprehenderit quae,
-                        ex laudantium hic impedit accusamus, consequatur tenetur
-                        quidem, modi repellendus.
+                        Почему этот интенсив
+                        даст результат 
+                        <br />
+                        • Экспертность. Наши преподаватели - это
+                        победители и призеры Всероссийской олимпиады школьников,
+                        которые сами прошли через все круги олимпиадного ада.
+                        Они знают, что такое сидеть на туре 4 часа, как
+                        справляться с паникой и где искать нестандартные ходы.
+                        Добавьте к этому опыт преподавания в легендарных школах
+                        (№179, 57») — и вы получите наставников, которые умеют
+                        передать свой опыт детям. 
+                        <br />
+                        • Авторская программа. Это не
+                        пересказ учебников, а выжимка реально работающих
+                        методов, которые приносят дипломы. Мы знаем, какие темы
+                        падают на ММО чаще всего, и бьем точно в цель. 
+                        <br />
+                        •
+                        Мини-группы до 10 человек. Каждого участника слышно.
+                        Никто не отсидится в уголке. Преподаватель видит, кто
+                        понял, а кто плавает, и успевает помочь каждому. В
+                        отличие от вебинаров на 100 человек, здесь вы не
+                        потеряетесь. 
+                        <br />
+                        • Обратная связь. После каждого занятия —
+                        домашка с персональной проверкой. Вы узнаете не просто
+                        оценку, а подробный разбор ошибок. Для 11-классников это
+                        критично — баллы снимают за мелкие недочеты, и мы научим
+                        их избегать.
                     </p>
                 ) : null}
             </section>
 
             <div className={styles.for_how}>
-                <div className={styles.title_main} style={{textAlign: 'center'}}>
-                    Чтобы задать свои вопросы или записаться на курс - пишите нам!
+                <div
+                    className={styles.title_main}
+                    style={{ textAlign: "center" }}
+                >
+                    Чтобы задать свои вопросы или записаться на курс - пишите
+                    нам!
                 </div>
-                <ConsultInMain/>
+                <ConsultInMain />
             </div>
         </div>
     );
