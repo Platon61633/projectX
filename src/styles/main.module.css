@@ -20,12 +20,23 @@
     /* position: absolute; */
     padding-top: 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     font-size: 360px;
     color: #cee1ea;
     margin: 0 5rem;
     /* font-weight: 800; */
+}
+
+.title p::before{
+    transform: translateY(300px);
+    content: 'Школа, которая переворачивает привычное представление о математике';
+    font-size: 30px;
+    position: absolute;
+    color: black;
+    /* height: 100%; */
+    /* vertical-align: bottom; */
 }
 
 .title .desc {
@@ -84,7 +95,7 @@
 
 @media (max-width: 500px) {
     .title p{
-        font-size: 110px;
+        font-size: 150px;
     }
 
     .button{
@@ -94,5 +105,29 @@
     .title .desc{
         transform: translateY(0);
         font-size: 10px;
+    }
+    .title p::before{
+        content: 'Школа,\A которая переворачивает\A привычное представление\A о математике';
+        white-space: pre;
+        font-size: 15px;
+        transform: translateY(30px);
+        width: 200px;
+        align-self: flex-start;
+        text-align: start;
+        margin-left: 20px;
+
+    }
+    .title p{
+        margin: 0;
+    }
+
+    .title{
+        text-align: end;
+    }
+
+    .button{
+        font-size: 7px;
+        margin-right: 20px;
+        transform: translateY(-70px);
     }
 }

@@ -10,10 +10,10 @@ const Main = () => {
     return (
         <div className={styles.main}>
             <div className={styles.title}>
-                <div className={styles.desc}>
+                {/* <div className={styles.desc}>
                     Школа, которая переворачивает привычное представление о
                     математике
-                </div>
+                </div> */}
                 <p>KA.BEST</p>
                 <div className={styles.button}>Получить консультацию</div>
             </div>
