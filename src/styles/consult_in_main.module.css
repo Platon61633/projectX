@@ -10,7 +10,7 @@
     /* display: flex; */
     display: grid;
     /* grid-template-columns: 250px 30px 20%; */
-    grid-template-columns: 250px 20%;
+    grid-template-columns: 375px 20%;
     justify-content: center;
     /* gap: 30px; */
 }

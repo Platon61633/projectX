@@ -47,9 +47,9 @@ const Main = () => {
             <AboutUsInMain/>
 
             <TeacherInMain />
-            <hr />
+            
             <CoursesInMain/>
-            <hr />
+            
             <ConsultInMain />
         </div>
     );
