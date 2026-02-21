@@ -32,3 +32,16 @@
     font-style: italic;
     /* des */
 }
+
+@media (max-width: 500px) {
+    .Intensive{
+        padding: 90px 1rem 3rem;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .block1{
+        font-size: 15px;
+        width: auto;
+    }
+}

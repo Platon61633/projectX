@@ -58,4 +58,7 @@
     .block{
         display: block;
     }
+    .text{
+        font-size: 17px;
+    }
 }

@@ -20,6 +20,7 @@ nav{
   /* background-color: rgb(207, 121, 121); */
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+  /* padding-left: 10px; */
 }
 
 .navbar__hidden {
@@ -69,6 +70,7 @@ nav{
     width: 25%;
     height: 200vh;
     background-color: white;
+    
 }
 
 
@@ -107,5 +109,6 @@ nav{
     .window{
         width: min-content;
         padding-right: 20px;
+        padding-left: 10px;
     }
 }

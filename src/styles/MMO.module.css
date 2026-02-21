@@ -1,14 +1,15 @@
-.MMO{
+.MMO {
     padding: 150px 5rem 3rem;
     background-color: var(--alice-blue);
 }
 
-.title_main{
+.title_main {
     font-size: 35px;
     font-weight: 900;
 }
 
-.block1, .block2{
+.block1,
+.block2 {
     width: 80%;
     background-color: #a2adfe33;
     padding: 3rem;
@@ -16,25 +17,26 @@
     border-radius: 6px;
 }
 
-.block1{
+.block1 {
     margin-top: 8rem;
 }
 
-.block2{
+.block2 {
     margin-left: 20%;
     margin-top: 3rem;
 }
 
-.block1 h2, .block2 h2{
+.block1 h2,
+.block2 h2 {
     margin-bottom: 20px;
 }
 
-.MMO h1{
+.MMO h1 {
     margin: 100px 0 50px;
     text-align: center;
 }
 
-.card{
+.card {
     background-color: white;
     display: flex;
     align-items: center;
@@ -44,21 +46,21 @@
     border-radius: 6px;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 }
 
-.card p{
+.card p {
     width: 20vw;
     text-align: center;
 }
 
-.card h3{
+.card h3 {
     font-weight: 900;
     margin-top: 30px;
 }
 
-.cards{
+.cards {
     display: flex;
     /* width: 100%; */
     justify-content: center;
@@ -68,7 +70,7 @@
     flex-wrap: wrap;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +78,7 @@
     margin: 0 25%;
 }
 
-.info .title{
+.info .title {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -86,9 +88,43 @@
     border: 1px solid black;
 }
 
-.info .text{
+.info .text {
     background-color: white;
     padding: 1rem;
     border: 1px solid black;
     font-size: 17px;
+}
+
+@media (max-width: 500px) {
+    .MMO {
+        padding: 150px 1rem 3rem;
+    }
+    .title_main {
+        font-size: 22px;
+    }
+
+    .block1,
+    .block2 {
+        font-size: 15px;
+    }
+    .block1 h2,
+    .block2 h2 {
+        font-size: 17px;
+    }
+    .block1 {
+        margin-top: 70px;
+    }
+    .MMO h1 {
+        font-size: 22px;
+    }
+    .card {
+        padding: 20px 80px;
+    }
+    .card p {
+        width: auto;
+        text-align: center;
+    }
+    .info .title{
+        font-size: 15px;
+    }
 }
