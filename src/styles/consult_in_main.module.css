@@ -53,3 +53,9 @@
     justify-content: center;
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    .block{
+        display: block;
+    }
+}

@@ -5,8 +5,12 @@ import achievement from "../accept/about_us.png";
 import bruh from "../accept/bruh.png";
 // import arrow from "../accept/arrow.svg";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+import msu from "../accept/msu_main1.jpg"
 
 const AboutUsInMain = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
+
     return (
         <div className={styles.AboutUsInMain}>
             <div className={styles.block_1}>
@@ -29,10 +33,16 @@ const AboutUsInMain = () => {
                         </div>
                     </div>
                 </div>
-                <img className={styles.picture} src={bruh} alt="" />
+                {isMobile ? null : (
+                    <img className={styles.picture} src={bruh} alt="" />
+                )}
             </div>
             <div className={styles.block_2}>
-                <img className={styles.picture} src={achievement} alt="" />
+                {isMobile ? (
+                    <img src={msu} alt="" />
+                ) : (
+                    <img className={styles.picture} src={achievement} alt="" />
+                )}
 
                 <div className={styles.text}>
                     <h1>Достижения</h1>
@@ -50,7 +60,9 @@ const AboutUsInMain = () => {
                         тренажер для ума.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-primary"><Link to={'/about_us'}>Подробнее</Link></div>
+                        <div className="btn-primary">
+                            <Link to={"/about_us"}>Подробнее</Link>
+                        </div>
                     </div>
                 </div>
             </div>

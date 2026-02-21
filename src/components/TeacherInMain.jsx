@@ -3,13 +3,17 @@ import styles from "../styles/teacher_in_main.module.css";
 // import arrow from "../accept/arrow.svg";
 import teacher from "../accept/achievement.png";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const TeacherInMain = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
+
     return (
         <div className={styles.teacher_in_main}>
             <div className={styles.block_2}>
-                <img className={styles.picture} src={teacher} alt="" />
-
+                {isMobile ? null : (
+                    <img className={styles.picture} src={teacher} alt="" />
+                )}
                 <div className={styles.text}>
                     <h1>Преподаватели</h1>
                     <p>
@@ -26,7 +30,9 @@ const TeacherInMain = () => {
                         тренажер для ума.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-primary"><Link to='/teachers#top'>Подробнее</Link></div>
+                        <div className="btn-primary">
+                            <Link to="/teachers#top">Подробнее</Link>
+                        </div>
                     </div>
                 </div>
             </div>

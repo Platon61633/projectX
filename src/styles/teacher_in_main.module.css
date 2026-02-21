@@ -39,3 +39,18 @@
     text-align: end;
     padding-top: 20px;
 }
+
+@media (max-width: 500px) {
+    .block_2{
+        display: block;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .text h1{
+        font-size: 17px;
+    }
+    .teacher_in_main{
+        margin: 3rem 1.5rem;
+    }
+}
