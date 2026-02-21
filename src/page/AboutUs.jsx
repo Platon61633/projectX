@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import styles from "../styles/about_us.module.css";
 import Logo from "../components/Logo";
+import { useMediaQuery } from "react-responsive";
 
 const AboutUs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
+
 
     return (
         <div className={styles.AboutUs}>
@@ -161,7 +165,9 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </p>
-                <Logo />
+                {isMobile?null:<Logo />
+                }
+                
             </section>
         </div>
     );

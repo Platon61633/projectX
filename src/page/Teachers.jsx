@@ -1,8 +1,17 @@
 import React, { useEffect } from "react";
 import styles from "../styles/teachers.module.css";
-import { VscAccount } from "react-icons/vsc";
+import first from "../accept/teachers/first.jpg"
+import second from "../accept/teachers/second.jpg"
+import third from "../accept/teachers/third.jpg"
 
 const Teachers = () => {
+
+        const Teachers = [
+        {img: first, full_name: 'Иван Иванович Иванов', years: '18', university: 'МГУ им. М.В. Ломоносов', achievements: 'Трёхкратный победитель региона ВсОШ, призёр заключительного этапа ВсОШ, победитель устного тура турнира Городов и серебряный медалист IZHO' },
+        {img: second, full_name: 'Иван Иванович Иванов', years: '18', university: 'МГУ им. М.В. Ломоносов', achievements: 'Победитель перечневых олимпиад по математике таких как ММО, Устный Турнир Городов, Высшая Проба, Курчатов, Физтех - все за 11 класс. Трехкратный участник заключительного этапа ВСОШ по математике и двухкратный участник ВСОШ по экономике' },
+        {img: third, full_name: 'Иван Иванович Иванов', years: '18', university: 'МГУ им. М.В. Ломоносов', achievements: 'Трёхкратный победитель региона ВСОШ по математике, призер заключительного этапа ВСОШ по математике, победитель ММО 11 класс, победитель устного турнира городов' },
+        
+    ]
 
     useEffect(()=>{
         window.scrollTo(0,0)
@@ -30,15 +39,18 @@ const Teachers = () => {
                 <h2>Наши преподаватели</h2>
             </div>
             <div className={styles.cards}>
-                {[0, 0, 0, 0, 0, 0, 0, 0, 0, 0].map((e, id) => (
+                {Teachers.map((e, id) => (
                     <div className={styles.card} key={id}>
-                        <VscAccount size={120} />
-                        <h3>Имя Фамилия</h3>
+                        <img src={e.img} alt="" width={200} />
+                        <h3>{e.full_name}</h3>
                         <div>
-                            <p>Студент МГУ им. Н. Манделы</p>
-                            <p>Возраст: 18 лет</p>
-                            <p>Стаж: 2 года</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                            <p>Студент {e.university}</p>
+                            <br />
+                            <p>Возраст: {e.years} лет</p>
+                            <br />
+                            <p>
+                                {e.achievements}
+                            </p>
                         </div>
                     </div>
                 ))}

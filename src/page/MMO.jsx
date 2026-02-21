@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/MMO.module.css";
-import { VscAccount } from "react-icons/vsc";
+// import { VscAccount } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 import ConsultInMain from "../components/ConsultInMain";
 // import list from "../accept/list.svg"
@@ -66,7 +66,7 @@ const MMO = () => {
             <div className={styles.cards}>
                 {Teachers.map((e, id) => (
                     <div className={styles.card} key={id}>
-                        <img src={e.img} width={200} />
+                        <img src={e.img} alt="" width={200} />
                         <h3>{e.full_name}</h3>
                         <div>
                             <p>Студент {e.university}</p>

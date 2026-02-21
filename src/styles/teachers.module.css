@@ -47,8 +47,28 @@
 
 .cards{
     display: flex;
-    /* width: 100%; */
     gap: 40px;
     margin-top: 20px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+        .card {
+        padding: 20px 40px;
+    }
+    .card p {
+        width: auto;
+        text-align: center;
+    }
+    .Teachers{
+        padding: calc(70px + 1rem) 1rem 3rem 1.5rem;
+    }
+    .block{
+        font-size: 15px;
+        margin-right: 40px;
+    }
+    .block h2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
 }
