@@ -2,14 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/head.module.css";
 // import { Si1Dot1Dot1Dot1 } from "react-icons/si";
 import { RxHamburgerMenu } from "react-icons/rx";
-// import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "react-responsive";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 // import { Link } from "react-router-dom";
 
 const Head = () => {
-    // const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
 
     const [IsShow, SetIsShow] = useState(false);
 
@@ -89,7 +89,9 @@ const Head = () => {
                                     <Link
                                         to="/intensive"
                                         onClick={() => SetIsShow(false)}
-                                        >Интенсивы</Link>
+                                    >
+                                        Интенсивы
+                                    </Link>
                                 </p>
                                 <p>
                                     <Link
@@ -114,24 +116,34 @@ const Head = () => {
             ) : null}
             <nav>
                 <div className={styles.left}>
-                    <RxHamburgerMenu
-                        size={50}
-                        onClick={() => SetIsShow(true)}
-                    />
+                    {isMobile ? null : (
+                        <RxHamburgerMenu
+                            size={50}
+                            onClick={() => SetIsShow(true)}
+                        />
+                    )}
+
                     <p>
                         <Link to="/">ka.best</Link>
                     </p>
                 </div>
-                <div className={styles.right}>
-                    <p className={styles.link}>
-                        <HashLink smooth to="/#div">
-                            Курсы и интенсивы
-                        </HashLink>
-                    </p>
-                    {/* <p className={styles.link}>
+                {isMobile ? (
+                    <RxHamburgerMenu
+                        size={50}
+                        onClick={() => SetIsShow(true)}
+                    />
+                ) : (
+                    <div className={styles.right}>
+                        <p className={styles.link}>
+                            <HashLink smooth to="/#div">
+                                Курсы и интенсивы
+                            </HashLink>
+                        </p>
+                        {/* <p className={styles.link}>
                         <Link to="/intensive"> интенсивы</Link>
                     </p> */}
-                </div>
+                    </div>
+                )}
             </nav>
         </div>
     );

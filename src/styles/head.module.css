@@ -102,3 +102,10 @@ nav{
 .link:hover:after {
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    .window{
+        width: min-content;
+        padding-right: 20px;
+    }
+}

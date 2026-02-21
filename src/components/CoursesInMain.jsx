@@ -8,11 +8,11 @@ const CoursesInMain = () => {
             <section className={styles.s1}>
                 <h1>Курсы</h1>
                 <p>
-                    У нас есть Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Omnis similique voluptatibus consequuntur
-                    pariatur voluptas perferendis porro eos rerum doloribus eum.
-                    Sequi, suscipit molestiae quidem doloremque quo mollitia
-                    placeat? Modi, consequatur.
+                    Наши основные курсы — это полноценная траектория роста для
+                    учеников, которые хотят научиться думать, а не просто решать
+                    по шаблону. Программа построена так, чтобы постепенно
+                    погружать ребенка в логику различных задач, начиная с самых
+                    азов и заканчивая сложными темами олимпиадного уровня.
                 </p>
                 <section>
                     <h3>классы подготовки:</h3>
@@ -41,10 +41,11 @@ const CoursesInMain = () => {
             <section className={styles.s2}>
                 <h1>Интенсивы и доп программы</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio officiis in dolore maiores eum eos ducimus sed officia
-                    esse at, eligendi iste perferendis soluta quod pariatur
-                    cumque unde tenetur magnam?
+                    Если до важной олимпиады остались считаные недели —
+                    приходите на наши интенсивы. Максимум практики, разбор
+                    реальных задач прошлых лет и никакой воды. А для тех, кто
+                    хочет углубиться в конкретную тему или попробовать
+                    нестандартные форматы, у нас есть дополнительные программы!
                 </p>
                 <div className={styles.button}>
                     <div className="btn-primary">
