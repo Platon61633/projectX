@@ -11,7 +11,7 @@ const Teachers = () => {
     return (
         <div className={styles.Teachers} id="top">
             <div className={styles.block}>
-                <h2>Преподовательский состав</h2>
+                <h2>Преподавательский состав</h2>
                 <p>
                     Наши преподаватели — действующие победители и призеры
                         Всероссийской олимпиады школьников, студенты лучших
@@ -27,7 +27,7 @@ const Teachers = () => {
                 </p>
             </div>
             <div className={styles.title}>
-                <h2>Наши преподователи</h2>
+                <h2>Наши преподаватели</h2>
             </div>
             <div className={styles.cards}>
                 {[0, 0, 0, 0, 0, 0, 0, 0, 0, 0].map((e, id) => (

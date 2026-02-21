@@ -11,7 +11,7 @@ const TeacherInMain = () => {
                 <img className={styles.picture} src={teacher} alt="" />
 
                 <div className={styles.text}>
-                    <h1>Преподователи</h1>
+                    <h1>Преподаватели</h1>
                     <p>
                         Наши преподаватели — действующие победители и призеры
                         Всероссийской олимпиады школьников, студенты лучших
@@ -26,7 +26,7 @@ const TeacherInMain = () => {
                         тренажер для ума.
                     </p>
                     <div className={styles.button}>
-                        <div className="btn-secondary"><Link to='/teachers#top'>Подробнее</Link></div>
+                        <div className="btn-primary"><Link to='/teachers#top'>Подробнее</Link></div>
                     </div>
                 </div>
             </div>

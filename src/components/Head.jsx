@@ -89,14 +89,14 @@ const Head = () => {
                                     <Link
                                         to="/intensive"
                                         onClick={() => SetIsShow(false)}
-                                        >Интентсивы</Link>
+                                        >Интенсивы</Link>
                                 </p>
                                 <p>
                                     <Link
                                         to="/teachers"
                                         onClick={() => SetIsShow(false)}
                                     >
-                                        Преподователи
+                                        Преподаватели
                                     </Link>
                                 </p>
                                 <p>
