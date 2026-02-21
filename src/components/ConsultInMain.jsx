@@ -19,7 +19,7 @@ const ConsultInMain = () => {
                         всё расскажем!
                     </p>
                     <div className={styles.buttons}>
-                        <img src={Telegram} alt="" />
+                        <a href="https://t.me/ka_best_manager"><img src={Telegram} alt="" /></a>
                         <img src={VK} alt="" />
                         <img src={MAX} alt="" />
                     </div>
