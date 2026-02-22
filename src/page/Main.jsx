@@ -5,7 +5,9 @@ import AboutUsInMain from "../components/AboutUsInMain";
 import CoursesInMain from "../components/CoursesInMain";
 import TeacherInMain from "../components/TeacherInMain";
 import ConsultInMain from "../components/ConsultInMain";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+// import { HashLink } from "react-router-hash-link";
+
 
 
 const Main = () => {
@@ -16,10 +18,11 @@ const Main = () => {
                     Школа, которая переворачивает привычное представление о
                     математике
                 </div> */}
+                
                 <p>KA.BEST</p>
-                <HashLink smooth to="/#consult">
+                <Link smooth to="/mmo">
                     <div className={styles.button}>Поступи в любимый вуз без экзаменов!</div>
-                </HashLink>
+                </Link>
                 
             </div>
 
