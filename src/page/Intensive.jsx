@@ -19,7 +19,7 @@ const Intensive = () => {
                         по БВИ в лучшие вузы в 11-м.
                     </p>
                     <div className={styles.info}>
-                            <div className={styles.date}>Дата проведения: 20.02.2020-20.02.2026</div>
+                            <div className={styles.date}>Дата проведения: 01.03.2026-14.03.2026</div>
                             <div className={styles.status}>Статус: Активно</div>
                             <div className={styles.button}>
                                 <div className="btn-primary">

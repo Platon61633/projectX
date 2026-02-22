@@ -68,8 +68,15 @@
     .s1 h1, .s1 section, .s2 h1, .s2 section{
         font-size: 17px;
     }
+    .s1 section{
+        gap: 10px;
+        padding: 10px;
+    }
     .classes{
         width: auto;
+    }
+    .classes .item{
+        white-space: nowrap;
     }
     .teacher_in_main{
         margin: 3rem 1.5rem;

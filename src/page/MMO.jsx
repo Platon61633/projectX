@@ -16,6 +16,8 @@ const MMO = () => {
     const [ShowProgram, SetShowProgram] = useState(false);
     const [ShowResult, SetShowResult] = useState(false);
     const [FourReason, SetFourReason] = useState(false);
+    const [Four , SetFour] = useState(false);
+    
 
     const Teachers = [
         {
@@ -129,25 +131,7 @@ const MMO = () => {
                     </div>
                     {ShowProgram ? (
                         <p className={styles.text}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias sequi ratione consectetur molestias iure
-                            facere expedita, obcaecati fugit deleniti? Quia
-                            aliquam corrupti sed voluptates neque reprehenderit
-                            quis cupiditate dicta consequuntur! Fuga a sequi hic
-                            illum nobis placeat voluptatibus, magnam accusantium
-                            eum fugiat tenetur quasi expedita accusamus animi
-                            architecto, vel tempore, officiis omnis! Atque quia,
-                            harum ducimus sequi fugit rerum et. Cupiditate ex
-                            ullam aperiam cumque fuga dolor dignissimos
-                            repudiandae est sed iusto incidunt recusandae
-                            quaerat quia accusantium architecto, neque, eum
-                            voluptatem, molestiae fugit voluptate laborum
-                            eveniet? Debitis dignissimos cumque quidem!
-                            Laboriosam quam, sed blanditiis obcaecati minima
-                            minus ipsam excepturi ad veniam earum magni odio
-                            veritatis sapiente iusto. Voluptatum reprehenderit
-                            quae, ex laudantium hic impedit accusamus,
-                            consequatur tenetur quidem, modi repellendus.
+                            В течении дня тут у появится программа
                         </p>
                     ) : null}
                 </section>
@@ -238,6 +222,64 @@ const MMO = () => {
                             просто оценку, а подробный разбор ошибок. Для
                             11-классников это критично — баллы снимают за мелкие
                             недочеты, и мы научим их избегать.
+                        </p>
+                    ) : null}
+                </section>
+                <section className={styles.info}>
+                    <div
+                        className={styles.title}
+                        onClick={() => {
+                            if (!Four) {
+                                SetFour(true);
+                            } else {
+                                SetFour(false);
+                            }
+                        }}
+                    >
+                        <p>Как проходят занятия на интенсиве </p>
+                        <IoIosArrowDown />
+                    </div>
+                    {Four ? (
+                        <p className={styles.text}>
+                            Мы выстроили процесс так, чтобы за короткий срок
+                            выжать максимум пользы из каждого часа. Никакой воды
+                            — только концентрированная работа над темами,
+                            которые реально нужны и встречались на олимпиаде.
+                            <br />
+                            1. Структура: от общего к частному Каждое занятие
+                            посвящено одной большой теме (например, «Теория
+                            чисел» или «Комбинаторика»). Внутри темы мы
+                            последовательно разбираем несколько подтем.
+                            <br />
+                            2. Лекционная часть: теория и разбор задач Занятие
+                            начинается с объяснения ключевых идей и методов. Но
+                            теория у нас всегда идет рука об руку с практикой:
+                            сразу же разбираем реальные задачи ММО прошлых лет,
+                            где эти методы работают. Преподаватель показывает не
+                            просто решение, а ход мыслей — как вообще до такого
+                            решения додуматься.
+                            <br />
+                            3. Живое общение в мини-группе Занятия проходят в
+                            формате живого вебинара в группах до 8 человек. Это
+                            значит, что в любой момент можно поднять руку,
+                            задать вопрос, предложить свой вариант решения. Мы
+                            не гонимся за скоростью — нам важно, чтобы поняли
+                            все. Дискуссии и обсуждения только приветствуются.
+                            <br />
+                            4. Записи занятий Если пришлось пропустить или
+                            хочется пересмотреть сложный момент — не проблема.
+                            Каждое занятие записывается. Можно пересматривать в
+                            удобном темпе, ставить на паузу и возвращаться к
+                            сложным местам.
+                            <br />
+                            5. Домашнее задание с индивидуальной проверкой После
+                            каждого занятия мы даем подборку задач для
+                            закрепления. Это не просто «решите 10 номеров». Мы
+                            тщательно отбираем задачи, которые бьют именно в те
+                            подводные камни, что разбирали на занятии. Для
+                            11-классников это особенно важно: баллы на
+                            олимпиадах часто снимают за мелочи в оформлении. Мы
+                            научим их не терять
                         </p>
                     ) : null}
                 </section>
