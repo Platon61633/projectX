@@ -4,26 +4,13 @@ import { FaTelegram, FaVk } from 'react-icons/fa';
 import styles from '../styles/footer.module.css';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    'Услуги': [
-      { name: 'Подготовка к ЕГЭ', path: '/services#ege' },
-      { name: 'Подготовка к ОГЭ', path: '/services#oge' },
-      { name: 'Школьная программа', path: '/services#school' },
-      { name: 'Интенсив-курсы', path: '/services#intensive' }
-    ],
-    'Ресурсы': [
-      { name: 'Блог', path: '/blog' },
-      { name: 'Материалы', path: '/materials' },
-      { name: 'FAQ', path: '/faq' },
-      { name: 'Отзывы', path: '/#testimonials' }
-    ],
-    'О компании': [
-      { name: 'Обо мне', path: '/about' },
-      { name: 'Контакты', path: '/contact' },
-      { name: 'Политика конфиденциальности', path: '/privacy' },
-      { name: 'Договор-оферта', path: '/offer' }
+    'Услуги': [      
+      { name: 'Интенсивы', path: '/intensive' },
+      { name: 'Курсы', path: '/courses' },
+      { name: 'Дополнительная программа', path: '/services#oge' },
     ]
   };
 
@@ -33,8 +20,7 @@ const Footer = () => {
         <div className={styles.footer_content}>
           <div className={styles.footer_section}>
             <p className={styles.footer_description}>
-              Индивидуальные занятия по математике, физике и информатике.
-              Подготовка к экзаменам, повышение успеваемости.
+              Школа, которая переворачивает привычное представление о математике
             </p>
             <div className={styles.footer_social}>
                         <a className={styles.social_link} target="_blank" rel="noreferrer" href="https://t.me/ka_best_manager">
@@ -63,33 +49,25 @@ const Footer = () => {
             <h3>Контакты</h3>
             <ul className={styles.footer_contacts}>
               <li>
-                <strong>Телефон:</strong>
-                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-              </li>
-              <li>
-                <strong>Email:</strong>
-                <a href="mailto:tutor@example.com">tutor@example.com</a>
-              </li>
-              <li>
-                <strong>Адрес:</strong>
-                <span>г. Москва, ул. Образцова, 25</span>
+                <strong>Телеграм:</strong>
+                <a href="https://t.me/ka_best_manager">@ka_best_manager</a>
               </li>
               <li>
                 <strong>Часы работы:</strong>
-                <span>Пн-Вс: 9:00-20:00</span>
+                <span>Пн-Вс: 8:00-21:00</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className={styles.footer_bottom}>
+        {/* <div className={styles.footer_bottom}> */}
           
           
-          <div className={styles.copyright}>
+          {/* <div className={styles.copyright}>
             <p>© {currentYear} Профессиональный репетитор. Все права защищены.</p>
             <p>ИП Петров А.И. ОГРНИП 123456789012345</p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </footer>
   );

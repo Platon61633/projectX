@@ -5,6 +5,8 @@ import AboutUsInMain from "../components/AboutUsInMain";
 import CoursesInMain from "../components/CoursesInMain";
 import TeacherInMain from "../components/TeacherInMain";
 import ConsultInMain from "../components/ConsultInMain";
+import { HashLink } from "react-router-hash-link";
+
 
 const Main = () => {
     return (
@@ -15,7 +17,10 @@ const Main = () => {
                     математике
                 </div> */}
                 <p>KA.BEST</p>
-                <div className={styles.button}>Получить консультацию</div>
+                <HashLink smooth to="/#consult">
+                    <div className={styles.button}>Получить консультацию</div>
+                </HashLink>
+                
             </div>
 
             <AboutUsInMain />

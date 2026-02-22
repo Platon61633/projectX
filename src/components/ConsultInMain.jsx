@@ -11,7 +11,7 @@ const ConsultInMain = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
 
     return (
-        <div className={styles.ConsultInMain}>
+        <div className={styles.ConsultInMain} id="consult">
             <div className={styles.block}>
                 <div className={styles.text}>
                     <p>

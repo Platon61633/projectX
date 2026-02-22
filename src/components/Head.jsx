@@ -135,7 +135,7 @@ const Head = () => {
                 ) : (
                     <div className={styles.right}>
                         <p className={styles.link}>
-                            <HashLink smooth to="/#div">
+                            <HashLink smooth to="/#courses">
                                 Курсы и интенсивы
                             </HashLink>
                         </p>

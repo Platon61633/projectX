@@ -154,6 +154,10 @@
     .info .title{
         font-size: 15px;
     }
+    .info {
+    width: 80%;
+    margin: 0 10%;
+}
     .s1, .s2{
         display: block;
     }
