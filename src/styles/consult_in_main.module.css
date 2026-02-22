@@ -22,7 +22,7 @@
 
 .arrow2{
     transform: rotate(90deg) translate(2px, -8px);
-}
+} 
 
 .ConsultInMain{
     margin: 75px 5rem 0;
@@ -51,7 +51,7 @@
     gap: 20px;
     height: 40px;
     justify-content: center;
-    width: 100%;
+    width: 160px;
 }
 
 @media (max-width: 500px) {

@@ -1,16 +1,16 @@
 .main {
     background-color: var(--alice-blue);
     padding-bottom: 100px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
     overflow-x: hidden;
 }
 
-.main hr {
+/* .main hr {
     border: none;
     height: 2px;
     color: #333;
     background-color: #333;
-}
+} */
 
 .title{
     text-align: center;
@@ -18,7 +18,7 @@
 
 .title p {
     /* position: absolute; */
-    padding-top: 40px;
+    /* padding-top: 40px; */
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -30,10 +30,10 @@
 }
 
 .title p::before{
-    transform: translateY(300px);
+    transform: translateY(338px);
     content: 'Школа, которая переворачивает привычное представление о математике';
     font-size: 30px;
-    position: absolute;
+    position: relative;
     color: black;
     /* height: 100%; */
     /* vertical-align: bottom; */
@@ -110,7 +110,7 @@
         content: 'Школа,\A которая переворачивает\A привычное представление\A о математике';
         white-space: pre;
         font-size: 15px;
-        transform: translateY(30px);
+        transform: translateY(99px);
         width: 200px;
         align-self: flex-start;
         text-align: start;
