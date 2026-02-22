@@ -18,7 +18,7 @@ const Main = () => {
                 </div> */}
                 <p>KA.BEST</p>
                 <HashLink smooth to="/#consult">
-                    <div className={styles.button}>Получить консультацию</div>
+                    <div className={styles.button}>Поступи в любимый вуз без экзаменов!</div>
                 </HashLink>
                 
             </div>

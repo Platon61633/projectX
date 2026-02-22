@@ -122,6 +122,43 @@
     text-align: center;
 }
 
+.cost{
+    margin-bottom: 150px;
+}
+
+.cost section{
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background: white; */
+    
+}
+
+.learn{
+    border-radius: 6px;
+    padding: 2rem 3rem;
+    /* width: 40%; */
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.cost .text{
+    margin: 1.5rem 0;
+    font-size: 17px;
+}
+
+.cost .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost .bottom p{
+    font-size: 30px;
+    font-weight: 900;
+}
+
 @media (max-width: 500px) {
     .MMO {
         padding: 150px 1rem 3rem;

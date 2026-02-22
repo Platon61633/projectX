@@ -10,14 +10,16 @@ import third from "../accept/teachers/third.jpg";
 import AboutIntensive from "../accept/about_intensive.png";
 import ManGraph from "../accept/man_graph.png";
 import { useMediaQuery } from "react-responsive";
+import { HashLink } from "react-router-hash-link";
+
+
 
 const MMO = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
     const [ShowProgram, SetShowProgram] = useState(false);
     const [ShowResult, SetShowResult] = useState(false);
     const [FourReason, SetFourReason] = useState(false);
-    const [Four , SetFour] = useState(false);
-    
+    const [Four, SetFour] = useState(false);
 
     const Teachers = [
         {
@@ -282,6 +284,48 @@ const MMO = () => {
                             научим их не терять
                         </p>
                     ) : null}
+                </section>
+            </div>
+
+            <div className={styles.cost}>
+                <h1>Наши цены</h1>
+                <section>
+                    <div className={styles.learn}>
+                        <h2>learn</h2>
+                        <div className={styles.text}>
+                            • лекции в мини-группах до 10 человек <br />• разбор
+                            каждой темы с разбиением на подтемы <br />• доступ к
+                            записям всех занятий <br />• задачи по пройденным
+                            темам на дом
+                        </div>
+                        <div className={styles.bottom}>
+                            <p>13990p</p>
+                            <div className="btn-primary">
+                                <HashLink smooth to="/#consult">
+                    Перейти
+                </HashLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.learn}>
+                        <h2>learn+</h2>
+                        <div className={styles.text}>
+                            • лекции в мини-группах до 10 человек
+                            <br />• разбор каждой темы с разбиением на подтемы
+                            <br />• доступ к записям всех занятий
+                            <br />• задачи по пройденным темам на дом
+                            <br />• проверка домашнего задания с комментариями
+                            преподавателя
+                        </div>
+                        <div className={styles.bottom}>
+                            <p>19490p</p>
+                            <div className="btn-primary">
+                                <HashLink smooth to="/#consult">
+                                Перейти
+                </HashLink>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
 
