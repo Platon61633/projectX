@@ -19,11 +19,16 @@ const ConsultInMain = () => {
                         всё расскажем!
                     </p>
                     <div className={styles.buttons}>
-                        <a href="https://t.me/ka_best_manager"><img width={40} src={Telegram} alt="" /></a>
-                        <a href="https://vk.ru/club236178059">
+                        <a target="_blank" rel="noreferrer" href="https://t.me/ka_best_manager">
+                            <img width={40} src={Telegram} alt="" />
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://vk.ru/club236178059">
                             <img width={40} src={VK} alt="" />
                         </a>
-                        <a href="https://max.ru/u/f9LHodD0cOIWBeXWl6gcUzWSYIOW0gDSiKS67-XZSB6osTey2D4BfdyXJIs">
+                        <a
+                            target="_blank" rel="noreferrer"
+                            href="https://max.ru/u/f9LHodD0cOIWBeXWl6gcUzWSYIOW0gDSiKS67-XZSB6osTey2D4BfdyXJIs"
+                        >
                             <img width={40} src={MAX} alt="" />
                         </a>
                     </div>
