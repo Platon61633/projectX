@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTelegram, FaWhatsapp } from 'react-icons/fa';
+import { FaTelegram, FaVk } from 'react-icons/fa';
 import styles from '../styles/footer.module.css';
 
 const Footer = () => {
@@ -37,15 +37,12 @@ const Footer = () => {
               Подготовка к экзаменам, повышение успеваемости.
             </p>
             <div className={styles.footer_social}>
-              <a href="https://en.wikipedia.org/wiki/Facebook" className={styles.social_link} aria-label="Facebook">
-                <FaFacebook />
-              </a>
-              <a href="https://en.wikipedia.org/wiki/Telegraphy#Telegram_services" className={styles.social_link} aria-label="Telegram">
-                <FaTelegram />
-              </a>
-              <a href="https://en.wikipedia.org/wiki/WhatsApp" className={styles.social_link} aria-label="WhatsApp">
-                <FaWhatsapp />
-              </a>
+                        <a className={styles.social_link} target="_blank" rel="noreferrer" href="https://t.me/ka_best_manager">
+                            <FaTelegram />
+                        </a>
+                        <a className={styles.social_link} target="_blank" rel="noreferrer" href="https://vk.ru/club236178059">
+                            <FaVk />
+                        </a>
             </div>
           </div>
 

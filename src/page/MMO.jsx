@@ -9,8 +9,10 @@ import second from "../accept/teachers/second.jpg";
 import third from "../accept/teachers/third.jpg";
 import AboutIntensive from "../accept/about_intensive.png";
 import ManGraph from "../accept/man_graph.png";
+import { useMediaQuery } from "react-responsive";
 
 const MMO = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
     const [ShowProgram, SetShowProgram] = useState(false);
     const [ShowResult, SetShowResult] = useState(false);
     const [FourReason, SetFourReason] = useState(false);
@@ -69,7 +71,9 @@ const MMO = () => {
                     </p>
                     {/* <img src={list} alt="" /> */}
                 </div>
-                <img src={AboutIntensive} width={100} alt="" />
+                {isMobile ? null : (
+                    <img src={AboutIntensive} width={100} alt="" />
+                )}
             </section>
             <section className={styles.s2}>
                 <img src={ManGraph} alt="" />
@@ -240,9 +244,7 @@ const MMO = () => {
             </div>
 
             <div className={styles.for_how}>
-                <div
-                    className={styles.question}
-                >
+                <div className={styles.question}>
                     Чтобы задать свои вопросы или записаться на курс - пишите
                     нам!
                 </div>
