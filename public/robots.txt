@@ -14,4 +14,4 @@ Disallow: /yarn.lock
 Disallow: /*.json$
 Disallow: /*.css$   
 
-Sitemap: www.ka-best.ru/sitemap.xml
+Sitemap: https://ka-best.ru/sitemap.xml
