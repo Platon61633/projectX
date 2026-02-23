@@ -48,8 +48,12 @@
 }
 
 .MMO h1 {
-    margin: 100px 0 50px;
     text-align: center;
+}
+
+.cost h1, .intensie_title{
+    margin: 100px 0 50px;
+    margin-top: 100px;
 }
 
 .card {
@@ -162,6 +166,29 @@
     font-weight: 900;
 }
 
+.sale .sale_text{
+    padding: 5rem;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #a2adfe33;
+}
+
+.sale{
+    display: grid;
+    align-items: center;
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sale img{
+    width: 100%;
+
+}
+
+.sale h1{
+    margin-bottom: 50px;
+}
+
 @media (max-width: 500px) {
     .MMO {
         padding: 150px 1rem 3rem;
@@ -201,8 +228,14 @@
     .s1, .s2{
         display: block;
     }
-    .cost section{
+    .cost section, .sale{
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+    .sale .sale_text{
+        padding: 2rem;
+    }
+    .sale h1{
+        margin-bottom: 20px;
     }
 }

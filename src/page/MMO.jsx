@@ -11,6 +11,7 @@ import AboutIntensive from "../accept/about_intensive.png";
 import ManGraph from "../accept/man_graph.png";
 import { useMediaQuery } from "react-responsive";
 import { HashLink } from "react-router-hash-link";
+import sale from "../accept/sale_man.png";
 
 const MMO = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
@@ -98,7 +99,7 @@ const MMO = () => {
                     </p>
                 </div>
             </section>
-            <h1>Интенсив ведут</h1>
+            <h1 className={styles.intensie_title}>Интенсив ведут</h1>
             <div className={styles.cards}>
                 {Teachers.map((e, id) => (
                     <div className={styles.card} key={id}>
@@ -327,15 +328,30 @@ const MMO = () => {
                 </section>
             </div>
 
+            <div className={styles.sale}>
+                <img src={sale} alt="" />
+                <div className={styles.sale_text}>
+                    <h1>Акция</h1>
+                <p>
+                    Предложение для друга Нам будет очень приятно, если друзья
+                    будут получать знания вместе на нашей платформе. Предлагаем
+                    и Вам получить положительные эмоции! 
+                    <br />
+                    <br />
+                    Пригласи друга, и друг
+                    получит скидку <strong>3 тысячи рублей!</strong>
+                </p>
+                </div>
+            </div>
+
             <div className={styles.for_how}>
                 <div className={styles.question}>
                     Чтобы задать свои вопросы или записаться на курс - пишите
                     нам!
                 </div>
-                <div id='mmo_consult'>
+                <div id="mmo_consult">
                     <ConsultInMain />
                 </div>
-                
             </div>
         </div>
     );
