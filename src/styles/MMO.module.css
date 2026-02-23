@@ -127,11 +127,14 @@
 }
 
 .cost section{
-    display: flex;
-    /* gap: 30px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 100px;
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background: white; */
+    background: white; */
     
 }
 
@@ -197,5 +200,9 @@
 }
     .s1, .s2{
         display: block;
+    }
+    .cost section{
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }

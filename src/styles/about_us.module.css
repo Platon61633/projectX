@@ -93,7 +93,7 @@
 .block1, .block2, .block3, .block4, .block5, .block6{
     padding: 40px 60px;
     border-radius: 6px;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .block1 h3, .block2 h3, .block3 h3, .block4 h3, .block5 h3, .block6 h3{

@@ -1,3 +1,6 @@
 .courses{
-    padding: 15rem;
+    height: 33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

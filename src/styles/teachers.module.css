@@ -74,4 +74,7 @@
     .cards{
         margin: inherit 1rem;
     }
+    .title{
+        margin-bottom: 50px;
+    }
 }

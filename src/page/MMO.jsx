@@ -12,8 +12,6 @@ import ManGraph from "../accept/man_graph.png";
 import { useMediaQuery } from "react-responsive";
 import { HashLink } from "react-router-hash-link";
 
-
-
 const MMO = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
     const [ShowProgram, SetShowProgram] = useState(false);
@@ -26,7 +24,7 @@ const MMO = () => {
             img: first,
             full_name: "Пименов Марк",
             years: "18",
-            university: "МГУ им. М.В. Ломоносов",
+            // university: "МГУ им. М.В. Ломоносов",
             achievements:
                 "Трёхкратный победитель региона ВсОШ, призёр заключительного этапа ВсОШ, победитель устного тура турнира Городов и серебряный медалист IZHO",
         },
@@ -34,7 +32,7 @@ const MMO = () => {
             img: second,
             full_name: "Аверин Михаил ",
             years: "18",
-            university: "МГУ им. М.В. Ломоносов",
+            // university: "МГУ им. М.В. Ломоносов",
             achievements:
                 "Победитель перечневых олимпиад по математике таких как ММО, Устный Турнир Городов, Высшая Проба, Курчатов, Физтех - все за 11 класс. Трехкратный участник заключительного этапа ВСОШ по математике и двухкратный участник ВСОШ по экономике",
         },
@@ -42,7 +40,7 @@ const MMO = () => {
             img: third,
             full_name: "Демидкин Максим",
             years: "18",
-            university: "МГУ им. М.В. Ломоносов",
+            // university: "МГУ им. М.В. Ломоносов",
             achievements:
                 "Трёхкратный победитель региона ВСОШ по математике, призер заключительного этапа ВСОШ по математике, победитель ММО 11 класс, победитель устного турнира городов",
         },
@@ -107,8 +105,8 @@ const MMO = () => {
                         <img src={e.img} alt="" width={200} />
                         <h3>{e.full_name}</h3>
                         <div>
-                            <p>Студент {e.university}</p>
-                            <br />
+                            {/* <p>Студент {e.university}</p> */}
+                            {/* <br /> */}
                             <p>Возраст: {e.years} лет</p>
                             <br />
                             <p>{e.achievements}</p>
@@ -299,11 +297,11 @@ const MMO = () => {
                             темам на дом
                         </div>
                         <div className={styles.bottom}>
-                            <p>13990p</p>
+                            <p>17990р</p>
                             <div className="btn-primary">
-                                <HashLink smooth to="/#consult">
-                    Перейти
-                </HashLink>
+                                <HashLink smooth to="#mmo_consult">
+                                    Перейти
+                                </HashLink>
                             </div>
                         </div>
                     </div>
@@ -318,11 +316,11 @@ const MMO = () => {
                             преподавателя
                         </div>
                         <div className={styles.bottom}>
-                            <p>19490p</p>
+                            <p>22490р</p>
                             <div className="btn-primary">
-                                <HashLink smooth to="/#consult">
-                                Перейти
-                </HashLink>
+                                <HashLink smooth to="#mmo_consult">
+                                    Перейти
+                                </HashLink>
                             </div>
                         </div>
                     </div>
@@ -334,7 +332,10 @@ const MMO = () => {
                     Чтобы задать свои вопросы или записаться на курс - пишите
                     нам!
                 </div>
-                <ConsultInMain />
+                <div id='mmo_consult'>
+                    <ConsultInMain />
+                </div>
+                
             </div>
         </div>
     );
