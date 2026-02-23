@@ -177,7 +177,7 @@
     display: grid;
     align-items: center;
     margin-bottom: 150px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
 }
 
 .sale img{

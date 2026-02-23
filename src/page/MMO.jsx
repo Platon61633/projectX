@@ -299,11 +299,9 @@ const MMO = () => {
                         </div>
                         <div className={styles.bottom}>
                             <p>17990р</p>
-                            <div className="btn-primary">
-                                <HashLink smooth to="#mmo_consult">
-                                    Перейти
-                                </HashLink>
-                            </div>
+                            <HashLink smooth to="#mmo_consult">
+                                <div className="btn-primary">Перейти</div>
+                            </HashLink>
                         </div>
                     </div>
                     <div className={styles.learn}>
@@ -318,11 +316,10 @@ const MMO = () => {
                         </div>
                         <div className={styles.bottom}>
                             <p>22490р</p>
-                            <div className="btn-primary">
-                                <HashLink smooth to="#mmo_consult">
-                                    Перейти
-                                </HashLink>
-                            </div>
+
+                            <HashLink smooth to="#mmo_consult">
+                                <div className="btn-primary">Перейти</div>
+                            </HashLink>
                         </div>
                     </div>
                 </section>
@@ -332,15 +329,15 @@ const MMO = () => {
                 <img src={sale} alt="" />
                 <div className={styles.sale_text}>
                     <h1>Предложение для друга</h1>
-                <p>
-                    Нам будет очень приятно, если друзья
-                    будут получать знания вместе на нашей платформе. Предлагаем
-                    и Вам получить положительные эмоции! 
-                    <br />
-                    <br />
-                    Пригласи друга, и друг
-                    получит скидку <strong>3 тысячи рублей!</strong>
-                </p>
+                    <p>
+                        Нам будет очень приятно, если друзья будут получать
+                        знания вместе на нашей платформе. Предлагаем и Вам
+                        получить положительные эмоции!
+                        <br />
+                        <br />
+                        Пригласи друга, и друг получит скидку{" "}
+                        <strong>3 тысячи рублей!</strong>
+                    </p>
                 </div>
             </div>
 
