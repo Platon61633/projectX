@@ -1,3 +1,17 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /node_modules/
+Disallow: /src/             
+Disallow: /build/           
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.idea/
+Disallow: /README.md
+Disallow: /package.json
+Disallow: /yarn.lock
+
+Disallow: /*.json$
+Disallow: /*.css$   
+
+Sitemap: www.ka-best.ru//sitemap.xml
