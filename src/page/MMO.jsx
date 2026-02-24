@@ -397,7 +397,7 @@ const MMO = () => {
                             темам на дом
                         </div>
                         <div className={styles.bottom}>
-                            <p>17990р</p>
+                            <p>15990р</p>
                             <HashLink smooth to="#mmo_consult">
                                 <div className="btn-primary">Перейти</div>
                             </HashLink>
@@ -414,7 +414,7 @@ const MMO = () => {
                             преподавателя
                         </div>
                         <div className={styles.bottom}>
-                            <p>22490р</p>
+                            <p>19490р</p>
 
                             <HashLink smooth to="#mmo_consult">
                                 <div className="btn-primary">Перейти</div>
