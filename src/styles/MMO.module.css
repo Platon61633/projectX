@@ -12,7 +12,7 @@
 .block2 {
     display: grid;
     /* width: 500px; */
-    background-color: #a2adfe33;
+    background-color: var(--sp-blue);
     padding: 3rem;
     font-size: 25px;
     border-radius: 6px;
@@ -170,7 +170,7 @@
     padding: 5rem;
     font-size: 20px;
     border-radius: 6px;
-    background-color: #a2adfe33;
+    background-color: var(--sp-blue);
 }
 
 .sale{

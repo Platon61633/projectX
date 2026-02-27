@@ -12,6 +12,7 @@ import ManGraph from "../accept/man_graph.png";
 import { useMediaQuery } from "react-responsive";
 import { HashLink } from "react-router-hash-link";
 import sale from "../accept/sale_man.png";
+import GetContacts from "./GetContacts";
 
 const MMO = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
@@ -439,6 +440,8 @@ const MMO = () => {
                     </p>
                 </div>
             </div>
+
+            <GetContacts />
 
             <div className={styles.for_how}>
                 <div className={styles.question}>
