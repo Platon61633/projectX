@@ -23,6 +23,9 @@ const GetContacts = () => {
         value: ""
     });
 
+    const [Status , SetStatus] = useState(0);
+    
+
     const Submit = () => {
         axios.post(
             "/backend/index.php",
@@ -30,7 +33,7 @@ const GetContacts = () => {
                 ...Info,
                 type: Choose
             }
-        ).then((e)=>console.log(e))
+        ).then((e)=>console.log(SetStatus(e.status)))
     };
     
 
@@ -113,13 +116,26 @@ const GetContacts = () => {
                             })}
                         />
                     </div>
-                    <div
+                    {Status===0?
+                        <div
                         className="btn-secondary"
                         style={{ alignSelf: "center" }}
                         onClick={Submit}
                     >
                         Отправить
                     </div>
+                    :
+                    (Status===200?
+                    <div className={styles.success}>
+                        Успешно отправлено
+                    </div>
+                    :
+                    <div className={styles.error}>
+                        Ошибка отправки
+                    </div>
+                    )
+                }
+                    
                 </div>
             </div>
         </div>

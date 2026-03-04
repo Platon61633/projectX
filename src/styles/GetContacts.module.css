@@ -41,6 +41,21 @@
     gap: 5px;
 }
 
+.success{
+    background-color: var(--green-field);
+    padding: 20px;
+    align-self: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.error{
+    background-color: red;
+    padding: 20px;
+    align-self: center;
+    border-radius: 6px;
+}
+
 
 
 @media (max-width: 500px) {
